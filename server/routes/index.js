@@ -4,6 +4,8 @@ const cors = require('cors');
 
 const Post = keystone.list('Posts');
 
+const Mission = keystone.List('Mission');
+
 module.exports = (app) => {
   app.use(cors());
 
@@ -13,6 +15,17 @@ module.exports = (app) => {
 
   app.get('/api/posts', (req, res) => {
     Post.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
+
+  app.get('/api/mission', (req, res) => {
+    Mission.model.find((err, data) => {
       if (err) {
         res.status(500).send('DB Error');
       } else {

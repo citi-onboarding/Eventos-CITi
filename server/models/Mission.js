@@ -2,19 +2,19 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Post = new keystone.List('Posts');
+const Mission = new keystone.List('Mission');
 
-Post.add({
-  name: {
+Mission.add({
+  title: {
     type: Types.Text,
     required: true,
     initial: true,
-    index: true,
   },
-  image: {
-    type: Types.CloudinaryImage,
+  Description: {
+    type: Types.Text,
     require: true,
+    initial: true,
   },
 });
 
-Post.register();
+Mission.register();
