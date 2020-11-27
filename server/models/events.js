@@ -14,13 +14,13 @@ Events.add({
 
   date: {
     type: Types.Date,
-    require: false,
+    required: true,
     initial: false,
   },
 
   images: {
     type: Types.CloudinaryImages,
-    require: true,
+    required: true,
   },
 
   description:{
@@ -29,10 +29,12 @@ Events.add({
 
     link: {
       type: Types.Url,
+      required: true,
  },
 
  simpleDescription:{
      type: Types.Text,
+     requiered: true,
  },
 
 });
