@@ -6,38 +6,29 @@ const Blog = new keystone.List('Blog');
 
 
 Blog.add({
-  title: {
+  name: {
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-
   image: {
-    type: Types.CloudinaryImages,
+    type: Types.CloudinaryImage,
     require: true,
-  },
 
+  },
   date: {
     type: Types.Date,
-    required: true,
-    initial: true,
-    index: true,
-    },
+  },
 
   description: {
     type: Types.Text,
-    required: true,
-    initial: true,
-    index: true,
   },
-  
+
   link: {
     type: Types.Url,
-    initial: true,
-    required: true,
-    index: true,
   },
+  
 });
 
 Blog.register();
