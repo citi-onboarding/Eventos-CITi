@@ -14,7 +14,7 @@ Mission.add({
   },
   Description: {
     type: Types.Text,
-    require: true,
+    required: true,
     initial: true,
   },
 });
