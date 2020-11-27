@@ -31,7 +31,7 @@ Events.add({
       type: Types.Url,
  },
 
- simpledescription:{
+ simpleDescription:{
      type: Types.Text,
  },
 
