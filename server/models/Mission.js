@@ -2,7 +2,9 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Mission = new keystone.List('Mission');
+const Mission = new keystone.List('Mission', {
+    nocreate: true
+});
 
 Mission.add({
   title: {
