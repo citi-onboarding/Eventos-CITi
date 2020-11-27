@@ -14,4 +14,9 @@ Post.add({
     initial: true,
     index: true,
   },
+
+  image: {
+    type: Types.CloudinaryImages,
+    require: true,
+  },
 });
