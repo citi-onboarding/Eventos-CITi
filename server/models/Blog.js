@@ -33,4 +33,11 @@ Post.add({
     initial: true,
     index: true,
   },
+  
+  link: {
+    type: Types.link,
+    initial: true,
+    required: true,
+    index: true,
+  },
 });
