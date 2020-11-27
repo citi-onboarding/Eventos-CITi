@@ -14,7 +14,7 @@ Banner.add({
   },
   caption: {
     type: Types.Text,
-    require: true,
+    required: true,
     initial: true,
   },
 });
