@@ -2,10 +2,10 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Blog = new keystone.List('Blog');
+const BlogPost = new keystone.List('BlogPost');
 
 
-Blog.add({
+BlogPost.add({
   name: {
     type: Types.Text,
     required: true,
@@ -31,4 +31,4 @@ Blog.add({
   
 });
 
-Blog.register();
+BlogPost.register();
