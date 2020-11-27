@@ -12,7 +12,7 @@ Mission.add({
     required: true,
     initial: true,
   },
-  Description: {
+  description: {
     type: Types.Text,
     required: true,
     initial: true,
