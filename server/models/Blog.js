@@ -19,4 +19,11 @@ Post.add({
     type: Types.CloudinaryImages,
     require: true,
   },
+
+  date: {
+    type: Types.date,
+    required: true,
+    initial: true,
+    index: true,
+    },
 });
