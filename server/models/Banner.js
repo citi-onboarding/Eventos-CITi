@@ -2,7 +2,9 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Banner = new keystone.List('Banner');
+const Banner = new keystone.List('Banner', {
+    nocreate: true
+});
 
 Banner.add({
   title: {
@@ -13,7 +15,7 @@ Banner.add({
   caption: {
     type: Types.Text,
     require: true,
-    inicial: true,
+    initial: true,
   },
 });
 
