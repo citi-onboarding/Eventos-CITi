@@ -26,4 +26,11 @@ Post.add({
     initial: true,
     index: true,
     },
+
+  description: {
+    type: Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+  },
 });
