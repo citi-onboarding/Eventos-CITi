@@ -2,12 +2,10 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Post = new keystone.List('Blog');
+const Blog = new keystone.List('Blog');
 
 
-Blog.register();
-
-Post.add({
+Blog.add({
   title: {
     type: Types.Text,
     required: true,
@@ -21,7 +19,7 @@ Post.add({
   },
 
   date: {
-    type: Types.date,
+    type: Types.Date,
     required: true,
     initial: true,
     index: true,
@@ -35,9 +33,11 @@ Post.add({
   },
   
   link: {
-    type: Types.link,
+    type: Types.Url,
     initial: true,
     required: true,
     index: true,
   },
 });
+
+Blog.register();
