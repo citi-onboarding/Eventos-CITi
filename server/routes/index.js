@@ -21,7 +21,7 @@ module.exports = (app) => {
       }
     });
   });
-
+  
   app.get('/api/events', (req, res) => {
     Events.model.find((err, data) => {
       if (err) {
