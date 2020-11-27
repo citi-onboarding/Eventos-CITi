@@ -6,3 +6,12 @@ const Post = new keystone.List('Blog');
 
 
 Blog.register();
+
+Post.add({
+  title: {
+    type: Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+  },
+});
