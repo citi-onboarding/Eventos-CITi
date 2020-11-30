@@ -12,30 +12,49 @@ Events.add({
     index: true,
   },
 
-  date: {
+  subscriptionDeadline:{
+    type: Types.Date,
+    required: true,
+    initial: true,
+  },
+
+  eventDate: {
     type: Types.Date,
     required: true,
     initial: false,
   },
 
+  local:{
+    type: Types.Text,
+    initial: true,
+    required: true,
+  },
+
   images: {
     type: Types.CloudinaryImages,
     required: true,
+    initial: true,
   },
 
   description:{
       type: Types.Text,
+      required: true,
+      initial: true,
   },
 
-    link: {
-      type: Types.Url,
-      required: true,
+  knowMoreLink: {
+    type: Types.Url,
+    required: true,
+    initial: true,
  },
 
- simpleDescription:{
+  subscriptionLink:{
+    type: Types.Url,
+  },
+
+ subscriptionDescription:{
      type: Types.Text,
-     requiered: true,
- },
+  },
 
 });
 
