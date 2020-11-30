@@ -21,7 +21,7 @@ Events.add({
   eventDate: {
     type: Types.Date,
     required: true,
-    initial: false,
+    initial: true,
   },
 
   local:{
