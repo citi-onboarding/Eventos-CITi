@@ -5,6 +5,8 @@ const cors = require('cors');
 const Post = keystone.list('Posts');
 const Events = keystone.list('Events');
 
+const BlogPost = keystone.list('BlogPost');
+
 module.exports = (app) => {
   app.use(cors());
 
@@ -31,6 +33,17 @@ module.exports = (app) => {
       }
     });
   });
+
+  app.get('/api/blogpost', (req, res) => {
+    BlogPost.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
 
   app.get('*', (req, res) => {
 		res.redirect('/');
