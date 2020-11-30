@@ -9,6 +9,8 @@ const BlogPost = keystone.list('BlogPost');
 
 const Mission = keystone.list('WhyWeDoIt');
 
+const Banner = keystone.list('Banner');
+
 module.exports = (app) => {
   app.use(cors());
 
@@ -50,6 +52,16 @@ module.exports = (app) => {
 
   app.get('/api/why-we-do-it', (req, res) => {
     Mission.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
+  app.get('/api/banner', (req, res) => {
+    Banner.model.find((err, data) => {
       if (err) {
         res.status(500).send('DB Error');
       } else {
