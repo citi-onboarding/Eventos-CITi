@@ -2,11 +2,11 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Mission = new keystone.List('Mission', {
+const WhyWeDoIt = new keystone.List('WhyWeDoIt', {
     nocreate: true
 });
 
-Mission.add({
+WhyWeDoIt.add({
   title: {
     type: Types.Text,
     required: true,
@@ -19,4 +19,4 @@ Mission.add({
   },
 });
 
-Mission.register();
+WhyWeDoIt.register();
