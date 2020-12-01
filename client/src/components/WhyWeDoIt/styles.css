@@ -1,0 +1,13 @@
+.why-we-do-it {
+  height: 10vh;
+  width: 10vw;
+  background-color: black;
+}
+
+.why-we-do-it p {
+  color: white;
+}
+
+.why-we-do-it h2 {
+  color: white;
+}

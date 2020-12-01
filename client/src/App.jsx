@@ -6,7 +6,7 @@ import {
 function App() {
   return (
     <>
-    <PostList />
+    {/* <PostList /> */}
     <WhyWeDoIt />
     </>
   );
