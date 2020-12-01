@@ -1,36 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
 
 /* Estilização Web */
+@media(min-width: 1024px) {
+  .why-we-do-it {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
 
-.why-we-do-it {
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
+  .why-we-do-it p {
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292929, 100%;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .why-we-do-it h2 {
+    color: #292929, 100%;
+    font-family: 'Barlow', sans-serif;
+    font-family: Barlow;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .why-we-do-it image {
+    width: 1097.5px;
+    height: 477px;
+}
 }
 
-.why-we-do-it p {
-  font-family: Barlow;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #292929, 100%;
-  font-family: 'Barlow', sans-serif;
-}
-
-.why-we-do-it h2 {
-  color: #292929, 100%;
-  font-family: 'Barlow', sans-serif;
-  font-family: Barlow;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.why-we-do-it image {
-  width: 1097.5px;
-  height: 477px;
-}
