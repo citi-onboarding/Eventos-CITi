@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { useState } from "react"
+import { useState } from "react"
 
 import './styles.css';
 
@@ -14,23 +14,21 @@ import heart from './images/heart.svg';
 import logoCiti from './images/logo-citi-principal.svg';
 import arrow from './images/arrow.svg';
 
-
 function Footer() {
-  let scrollHeight = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
-  );
-    console.log(scrollHeight)
+
+  const [bottom, setBottom] = useState(false);
 
   window.addEventListener('scroll', (event) => {
-    var scrollPosition = window.pageYOffset;
-    console.log("o y tá no " + scrollPosition);
+    if (document.scrollingElement.scrollHeight - document.scrollingElement.scrollTop === document.scrollingElement.clientHeight) {
+      setBottom(true);
+    } else{
+      setBottom(false)
+    }
   });
 
   return (
-    <footer className="footer">
-        <img className="arrow" src={arrow} alt="seta" />
+    <footer className={bottom ? 'footer footer-active' : 'footer'}>
+        <img onClick={() => setBottom(false)} className="arrow" src={arrow} alt="seta" />
         <div className="contatoFooter">
           <div className="socialNetworksFooter">
           <a href="https://www.facebook.com/"><img src={facebookLogo} alt="logo do facebook " /></a>
