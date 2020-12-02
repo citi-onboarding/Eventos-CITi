@@ -16,7 +16,7 @@ export default function WhyWeDoIt () {
   }, []);
 
   return (
-    <section className="why-we-do-it">
+    <section className="why-we-do-it" id="sectionWhyWeDoIt">
       <div className="container">
         <div className="content">
         <h2>{whyWeDoIt && whyWeDoIt[0].title}</h2>

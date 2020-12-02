@@ -1,54 +1,66 @@
-/* Estilização Web */
 @media(min-width: 1920px) {
   .why-we-do-it {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 1200px;
     position: relative;
+    justify-content:  center;
+    align-content: center;
+
   }
 
   .container {
     display: flex;
-    margin-left: 360px;
-    margin-right: 360px;
-    width: 100%;
+    justify-content: space-between;
+    width: 1200px;
+    align-self: center;
   }
 
   .content {
+    display: flex;
     width: 436px;
-    align-self: flex-start;
   }
-    
-
   
   #webImageWhyWeDoIt { 
-    align-content: flex-end;
-    float: left;
+    display: flex;
     order: 3;
-    height: auto;
-    width: 343px;
+    height: 477px;
+    width: auto;
   }
 
   #mobileImageWhyWeDoIt {
     display: none;
   }
 
+  /* Decrição Web */
   .why-we-do-it p {
     margin-bottom: auto;
     margin-right: auto;
     order: 2;
     float: left;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
   }
 
+  /* Título Web */
   .why-we-do-it h2 {
     margin-bottom: auto;
     margin-right: auto;
     order: 1;
     float: left;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: 292929, 100%;
+    
   }
 
   /* Bolha 6 */
@@ -59,8 +71,84 @@
     z-index: -1;
     left: 187px;
   }
-
 }
+
+
+/* Estilização Web Menor que FHD*/
+@media(max-width: 1920px) and (min-width: 1024px) {
+  .why-we-do-it {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    justify-content:  center;
+  }
+
+  .container {
+    display: flex;
+    margin-left: 360px;
+    margin-right: 360px;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 436px;
+    align-self: flex-start;
+  }
+  
+  #webImageWhyWeDoIt { 
+    display: flex;
+    align-content: flex-start;
+    order: 3;
+    height: auto;
+    width: 343px;
+  }
+
+  #mobileImageWhyWeDoIt {
+    display: none;
+  }
+
+  /* Decrição Web */
+  .why-we-do-it p {
+    margin-bottom: auto;
+    margin-right: auto;
+    order: 2;
+    float: left;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Título Web */
+  .why-we-do-it h2 {
+    margin-bottom: auto;
+    margin-right: auto;
+    order: 1;
+    float: left;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: 292929, 100%;
+    
+  }
+}
+
+  /* Bolha 6 */
+
+  .BubbleSix{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 187px;
+  }
+
 
 /* Estilização mobile */
 @media(max-width: 1024px) {
