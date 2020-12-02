@@ -4,6 +4,9 @@ const { Types } = keystone.Field;
 
 const Banner = new keystone.List('Banner', {
     nocreate: true
+},
+{
+  nodelete: true
 });
 
 Banner.add({
