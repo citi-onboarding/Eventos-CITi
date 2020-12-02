@@ -1,13 +1,10 @@
 @media(min-width: 1920px) {
   .why-we-do-it {
     display: flex;
-    flex-direction: column;
     margin-top: 40px;
     margin-bottom: 40px;
     position: relative;
-    justify-content:  center;
-    align-content: center;
-
+    justify-content:center;
   }
 
   .container {
@@ -20,13 +17,15 @@
   .content {
     display: flex;
     width: 436px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: flex-start;
   }
   
   #webImageWhyWeDoIt { 
-    display: flex;
     order: 3;
     height: 477px;
-    width: auto;
   }
 
   #mobileImageWhyWeDoIt {
@@ -35,25 +34,17 @@
 
   /* Decrição Web */
   .why-we-do-it p {
-    margin-bottom: auto;
-    margin-right: auto;
-    order: 2;
-    float: left;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    display: flex;
-    align-items: center;
+    order: 2;
   }
 
   /* Título Web */
   .why-we-do-it h2 {
-    margin-bottom: auto;
-    margin-right: auto;
     order: 1;
-    float: left;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
