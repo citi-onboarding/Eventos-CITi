@@ -20,7 +20,7 @@ export default function WhyWeDoIt () {
   return (
     <section className="why-we-do-it">
       <h2>{whyWeDoIt && whyWeDoIt[0].title}</h2>
-      <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Image"/>
+      <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Por que nós fazemos?"/>
       <p>{whyWeDoIt && whyWeDoIt[0].description}</p>
     </section>
   );

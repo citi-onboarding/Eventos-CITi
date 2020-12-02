@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
-
 /* Estilização Web */
 @media(min-width: 1024px) {
   .why-we-do-it {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100vw;
-  }
-
-  body {
-    background: #E5E5E5;
   }
 
   .why-we-do-it p {
