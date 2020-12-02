@@ -1,5 +1,7 @@
 import React from 'react';
 
+// import { useState } from "react"
+
 import './styles.css';
 
 import facebookLogo from './images/facebook.svg';
@@ -14,6 +16,17 @@ import arrow from './images/arrow.svg';
 
 
 function Footer() {
+  let scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+  );
+    console.log(scrollHeight)
+
+  window.addEventListener('scroll', (event) => {
+    var scrollPosition = window.pageYOffset;
+    console.log("o y tá no " + scrollPosition);
+  });
 
   return (
     <footer className="footer">
@@ -35,7 +48,7 @@ function Footer() {
         <div className="logoCitiFooter">
           <img src={logoCitiEventos} alt="logo do Citi eventos"/>
         </div>
-        <div className="endereco">
+        <div className="addressAndMessage">
           <p className="address">Av. Jornalista Anibal Fernandes, s/n - Cidade Universitária. Recife - PE. 50740-560</p>
           <a href="https://goo.gl/maps/vmYVEPgA8pDgduEb8">Ver no mapa</a>
           <div className="message">

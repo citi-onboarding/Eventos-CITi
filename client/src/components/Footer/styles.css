@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap');
 
 footer .contatoFooter .phone{
     display: flex;
 }
 
 footer{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 400;
 }
 
@@ -28,18 +28,18 @@ footer{
         order: -1;
     }
 
-    footer .endereco {
+    footer .addressAndMessage {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    footer .endereco .address{
+    footer .addressAndMessage .address{
         text-align: center;
         width: 70%;
     }
 
-    footer .endereco img{
+    footer .addressAndMessage img{
         height: 15px;
 
     }
@@ -64,7 +64,7 @@ footer{
         border-bottom: 3px solid #292929;
     }
 
-    footer .endereco a{
+    footer .addressAndMessage a{
         text-decoration: none;
         color: #292929;
         font-weight: 500;
@@ -72,14 +72,18 @@ footer{
         margin-bottom: 10px;
     }
 
+    footer .addressAndMessage .message p{
+        display: flex;
+        width: fit-content;
+    }
+
 }
   
 @media (min-width: 1025px) {
 footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
     height: 360px;
     font-size: 16px;
 }
@@ -99,36 +103,50 @@ footer .logoCitiFooter img{
     height: 100px;
 }
 
-footer .contatoFooter .socialNetworksFooter img{
-    margin-right: 5px;
+footer .contatoFooter{
+    margin-left: 360px;
 }
 
-footer .endereco{
+footer .contatoFooter .socialNetworksFooter img{
+    margin-right: 20px;
+}
+
+footer .contatoFooter .phone img{
+    margin-right: 15px;
+}
+
+footer .addressAndMessage{
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    margin-right: 360px;
 }
 
-footer .endereco p{
+footer .addressAndMessage p{
     width: 200px;
     text-align: right;
 }
 
-footer .endereco a{
+footer .addressAndMessage .address{
+    margin-bottom: 32%;
+}
+
+footer .addressAndMessage a{
     display: none;
 }
 
-footer .endereco .message{
+footer .addressAndMessage .message{
     display: flex;
     justify-content: center;
 }
 
-footer .endereco .message p{
+footer .addressAndMessage .message p{
     display: flex;
-    width: 17vw;
+    width: fit-content;
 }
 
-footer .endereco .message #logoDoCiti{
+footer .addressAndMessage .message #logoDoCiti{
     height: 20px;
 }
+
 } 
