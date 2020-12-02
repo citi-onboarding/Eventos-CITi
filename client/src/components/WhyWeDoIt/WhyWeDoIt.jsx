@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-
+import {ReactComponent as BubbleSix} from './image/bolha6.svg'
 import './styles.css';
 
 export default function WhyWeDoIt () {
@@ -23,8 +23,9 @@ export default function WhyWeDoIt () {
         <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Por que nós fazemos?" id="mobileImageWhyWeDoIt"/>
         <p>{whyWeDoIt && whyWeDoIt[0].description}</p>
         </div>
-      <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Por que nós fazemos?" id="webImageWhyWeDoIt"/>
+        <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Por que nós fazemos?" id="webImageWhyWeDoIt"/>
       </div>
+      <BubbleSix className="BubbleSix"></BubbleSix>
     </section>
   );
 }
