@@ -1,2 +1,5 @@
-export { default as PostList } from './PostList';
-export { default as Footer } from './Footer';
+import Footer from './Footer/Footer.jsx';
+
+import PostList from './PostList';
+
+export {Footer, PostList};
