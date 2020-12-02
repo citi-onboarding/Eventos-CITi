@@ -1,42 +1,68 @@
 /* Estilização Web */
-@media(min-width: 1024px) {
+@media(min-width: 1920px) {
   .why-we-do-it {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1200px;
+  }
+
+  .container {
+    display: flex;
+    margin-left: 360px;
+    margin-right: 360px;
+    width: 100%;
+  }
+
+  .content {
+    width: 436px;
+    align-self: flex-start;
+  }
+    
+
+  
+  #webImageWhyWeDoIt { 
+    align-content: flex-end;
+    float: left;
+    order: 3;
+    height: auto;
+    width: 343px;
+  }
+
+  #mobileImageWhyWeDoIt {
+    display: none;
   }
 
   .why-we-do-it p {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #292929, 100%;
-    font-family: 'Barlow', sans-serif;
+    margin-bottom: auto;
+    margin-right: auto;
+    order: 2;
+    float: left;
   }
 
   .why-we-do-it h2 {
-    color: #292929, 100%;
-    font-family: 'Barlow', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: left;
+    margin-bottom: auto;
+    margin-right: auto;
+    order: 1;
+    float: left;
   }
 
-  .why-we-do-it img {
-    width: 639.3px;
-    height: 477px;
-}
 }
 
 /* Estilização mobile */
 @media(max-width: 1024px) {
   
   /* Título - Mobile */
+  .why-we-do-it {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
   .why-we-do-it h2{
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -44,14 +70,20 @@
     font-size: 28px;
     line-height: 34px;
     color: #292929;
+    order: 1;
   }
 
   /* Imagem - Mobile */
-  .why-we-do-it img{
-    width: 343px;
-    height: 236px;
+  #mobileImageWhyWeDoIt {
+    height: 100%;
+    width: 100%;
+    order: 2;
   }
    
+  #webImageWhyWeDoIt {
+    display: none;
+  }
+
   /* Descrição - Mobile */
   .why-we-do-it p{
     font-family: 'Barlow', sans-serif;
@@ -60,5 +92,6 @@
     font-size: 15px;
     line-height: 18px;
     color: #000000, 100%;
+    order: 3;
   }
 }
