@@ -31,7 +31,7 @@ footer{
         bottom: 0;
         margin-bottom: -512px;
         transition: 0.3s ease;
-        background-color: white;
+        background-color: #FCFCFC;
     }
 
     footer .arrow{
@@ -112,7 +112,7 @@ footer .containerFooter{
     justify-content: center;
     position: fixed;
     bottom: 0;
-    background-color: white;
+    background-color: #FCFCFC;
     display: flex;
     height: 360px;
     font-size: 16px;

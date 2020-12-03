@@ -19,7 +19,7 @@ function Footer() {
   const [bottom, setBottom] = useState(false);
 
   window.addEventListener('scroll', (event) => {
-    if (document.scrollingElement.scrollHeight - Math.floor(document.scrollingElement.scrollTop) === document.scrollingElement.clientHeight) {
+    if (((document.scrollingElement.scrollHeight - document.scrollingElement.scrollTop) - document.scrollingElement.clientHeight) < 2) {
       setBottom(true);
     } else{
       setBottom(false)
