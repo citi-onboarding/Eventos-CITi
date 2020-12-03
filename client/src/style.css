@@ -6,7 +6,6 @@ body {
 
 #root {
   overflow-x: hidden;
-  height: 400vh;
 }
 #root::-webkit-scrollbar {
   display: none;
