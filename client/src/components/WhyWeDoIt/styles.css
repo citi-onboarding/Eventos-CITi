@@ -1,9 +1,9 @@
+/* Estilização web acima de Fulld HD+ */
 @media(min-width: 1920px) {
   .why-we-do-it {
     display: flex;
     margin-top: 40px;
     margin-bottom: 40px;
-    position: relative;
     justify-content:center;
   }
 
@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    align-self: center;
   }
 
   .content {
@@ -24,7 +23,6 @@
   }
   
   #webImageWhyWeDoIt { 
-    order: 3;
     height: 477px;
   }
 
@@ -32,68 +30,56 @@
     display: none;
   }
 
-  /* Decrição Web */
+  /* Decrição Web FHD+ */
   .why-we-do-it p {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    order: 2;
   }
 
-  /* Título Web */
+  /* Título Web  FHD+ */
   .why-we-do-it h2 {
-    order: 1;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 18px;
     color: 292929, 100%;
+    margin: 0;
     
-  }
-
-  /* Bolha 6 */
-
-  .BubbleSix{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    left: 187px;
   }
 }
 
 
 /* Estilização Web Menor que FHD*/
-@media(max-width: 1920px) and (min-width: 1024px) {
+@media(max-width: 1920px) and (min-width: 1025px) {
   .why-we-do-it {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    position: relative;
-    justify-content:  center;
   }
+
 
   .container {
     display: flex;
-    margin-left: 360px;
-    margin-right: 360px;
     justify-content: space-between;
+    width: 62.5vw;
   }
 
+  /* Alinhamento dos textos */
   .content {
-    width: 436px;
+    width: 22.7vw;
     align-self: flex-start;
   }
   
-  #webImageWhyWeDoIt { 
-    display: flex;
-    align-content: flex-start;
+  /* Tamanho da imagem */
+  #webImageWhyWeDoIt {
     order: 3;
-    height: auto;
-    width: 343px;
+    width: 36.15vw;
   }
 
   #mobileImageWhyWeDoIt {
@@ -102,10 +88,6 @@
 
   /* Decrição Web */
   .why-we-do-it p {
-    margin-bottom: auto;
-    margin-right: auto;
-    order: 2;
-    float: left;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -113,32 +95,22 @@
     line-height: 18px;
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   /* Título Web */
   .why-we-do-it h2 {
-    margin-bottom: auto;
-    margin-right: auto;
-    order: 1;
-    float: left;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 18px;
     color: 292929, 100%;
+    margin: 0;
     
   }
 }
 
-  /* Bolha 6 */
-
-  .BubbleSix{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    left: 187px;
-  }
 
 
 /* Estilização mobile */
@@ -184,12 +156,15 @@
     order: 3;
   }
 
-  /* Bolha 6 */
+}
+/* Configurações para a bolha*/
+sectionWhyWeDoIt {
+  position: relative;
+}
 
-  .BubbleSix{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    left: 187px;
-  }
+.BubbleSix {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }

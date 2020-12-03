@@ -17,6 +17,7 @@ export default function WhyWeDoIt () {
 
   return (
     <section className="why-we-do-it" id="sectionWhyWeDoIt">
+      <BubbleSix className="BubbleSix"></BubbleSix>
       <div className="container">
         <div className="content">
         <h2>{whyWeDoIt && whyWeDoIt[0].title}</h2>
@@ -25,7 +26,6 @@ export default function WhyWeDoIt () {
         </div>
         <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Por que nós fazemos?" id="webImageWhyWeDoIt"/>
       </div>
-      <BubbleSix className="BubbleSix"></BubbleSix>
     </section>
   );
 }
