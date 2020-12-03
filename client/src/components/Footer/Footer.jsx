@@ -19,7 +19,7 @@ function Footer() {
   const [bottom, setBottom] = useState(false);
 
   window.addEventListener('scroll', (event) => {
-    if (document.scrollingElement.scrollHeight - document.scrollingElement.scrollTop === document.scrollingElement.clientHeight) {
+    if (document.scrollingElement.scrollHeight - Math.floor(document.scrollingElement.scrollTop) === document.scrollingElement.clientHeight) {
       setBottom(true);
     } else{
       setBottom(false)
@@ -28,6 +28,7 @@ function Footer() {
 
   return (
     <footer className={bottom ? 'footer footer-active' : 'footer'}>
+        <div className="containerFooter">
         <img onClick={() => setBottom(false)} className="arrow" src={arrow} alt="seta" />
         <div className="contatoFooter">
           <div className="socialNetworksFooter">
@@ -52,6 +53,7 @@ function Footer() {
           <div className="message">
           <p>Made with  &nbsp;<img src={codeImage} alt="representacao de um codigo"/>  &nbsp;and&nbsp;  <img src={heart} alt="coracao"/>  &nbsp;by&nbsp;  <img id="logoDoCiti" src={logoCiti} alt="logo do citi"/></p>
           </div>
+        </div>
         </div>
     </footer>
   );
