@@ -20,6 +20,7 @@ footer{
         align-items: center;
         justify-content: space-evenly;
         height: 100%;
+        
     }
 
     .footer{
@@ -36,6 +37,8 @@ footer{
 
     footer .arrow{
         order: -1;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     footer .logoCitiFooter{
@@ -61,15 +64,25 @@ footer{
     footer .contatoFooter .socialNetworksFooter{
         display: flex;
         justify-content: center;
+        margin-top: 40px;
+        margin-left: 15px;
+    }
+
+    footer .contatoFooter .socialNetworksFooter img{
+        margin-right: 16px;
+        height: 24px;
     }
 
     footer .contatoFooter .phone{
         margin-top: 20px;
     }
 
-    footer .contatoFooter .socialNetworksFooter img{
-        margin-right: 15px;
+    footer .contatoFooter .phone img{
+        height: 18px;
+        margin-top: 10px;
+        margin-right: 11px;
     }
+    
 
     footer .line{
         display: block;
@@ -89,6 +102,7 @@ footer{
     footer .addressAndMessage .message p{
         display: flex;
         width: fit-content;
+        margin-bottom: 40px;
     }
 
 }
@@ -120,6 +134,7 @@ footer .containerFooter{
     margin-bottom: -360px;
     transition: 0.3s ease;
     overflow: hidden;
+    
 }
 
 .arrow{
