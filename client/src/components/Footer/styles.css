@@ -180,3 +180,9 @@ footer .addressAndMessage .message #logoDoCiti{
 }
 
 } 
+
+@media (min-width: 1921px){
+    footer .containerFooter{
+        width: 1200px;
+    }
+}
