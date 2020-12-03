@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import {ReactComponent as BubbleSix} from './image/bolha6.svg'
+import {ReactComponent as BubbleThree} from './image/bolha3.svg'
 import './styles.css';
-
 export default function WhyWeDoIt () {
   const [whyWeDoIt, setWhyWeDoIt] = useState();
   const loadWhyWeDoIt = async () => {
@@ -17,9 +16,9 @@ export default function WhyWeDoIt () {
 
   return (
     <section className="why-we-do-it" id="sectionWhyWeDoIt">
-      <BubbleSix className="BubbleSix"></BubbleSix>
       <div className="container">
         <div className="content">
+        <BubbleThree className="BubbleThree"></BubbleThree>
         <h2>{whyWeDoIt && whyWeDoIt[0].title}</h2>
         <img src={whyWeDoIt && whyWeDoIt[0].image.secure_url} alt="Por que nós fazemos?" id="mobileImageWhyWeDoIt"/>
         <p>{whyWeDoIt && whyWeDoIt[0].description}</p>

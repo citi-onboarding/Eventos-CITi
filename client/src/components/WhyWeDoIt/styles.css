@@ -21,9 +21,10 @@
     flex-wrap: nowrap;
     align-content: flex-start;
   }
-  
+  /* Imagem - Web FHD+ */
   #webImageWhyWeDoIt { 
     height: 477px;
+
   }
 
   #mobileImageWhyWeDoIt {
@@ -39,16 +40,24 @@
     line-height: 18px;
   }
 
-  /* Título Web  FHD+ */
+  /* Título - Web FHD+ */
   .why-we-do-it h2 {
+    margin-bottom: 40px;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 18px;
     color: 292929, 100%;
-    margin: 0;
-    
+    margin: 0; 
+  }
+
+  /* Bolha - Web FHD+ */
+  .BubbleThree {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: 80%;
   }
 }
 
@@ -70,23 +79,26 @@
     width: 62.5vw;
   }
 
-  /* Alinhamento dos textos */
+  /* Alinhamento dos textos - Web */
   .content {
     width: 22.7vw;
     align-self: flex-start;
   }
   
-  /* Tamanho da imagem */
+  /* Imagem - Web */
   #webImageWhyWeDoIt {
+    display: flex;
     order: 3;
     width: 36.15vw;
+    height: 24.18vw;
+
   }
 
   #mobileImageWhyWeDoIt {
     display: none;
   }
 
-  /* Decrição Web */
+  /* Decrição - Web */
   .why-we-do-it p {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -98,8 +110,9 @@
     width: 100%;
   }
 
-  /* Título Web */
+  /* Título - Web */
   .why-we-do-it h2 {
+    margin-bottom: 40px;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -107,7 +120,14 @@
     line-height: 18px;
     color: 292929, 100%;
     margin: 0;
-    
+  }
+
+  /* Bolha - Web */
+  .BubbleThree {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: 80%;
   }
 }
 
@@ -116,7 +136,7 @@
 /* Estilização mobile */
 @media(max-width: 1024px) {
   
-  /* Título - Mobile */
+  /* Centralização - Mobile */
   .why-we-do-it {
     margin-left: 16px;
     margin-right: 16px;
@@ -124,6 +144,7 @@
     margin-bottom: 40px;
   }
 
+  /* Título - Mobile */
   .why-we-do-it h2{
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -132,6 +153,7 @@
     line-height: 34px;
     color: #292929;
     order: 1;
+    margin-bottom: 32px;
   }
 
   /* Imagem - Mobile */
@@ -139,6 +161,7 @@
     height: 100%;
     width: 100%;
     order: 2;
+    margin-bottom: 32px;
   }
    
   #webImageWhyWeDoIt {
@@ -152,19 +175,22 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    color: #000000, 100%;
+    color: #000000;
     order: 3;
   }
 
-}
-/* Configurações para a bolha*/
-sectionWhyWeDoIt {
-  position: relative;
-}
+  /* Bolha - Mobile */
+  .BubbleThree {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 40%;
+    width: 600px;
+    height: auto;
+  }
 
-.BubbleSix {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
+}
+/* Bolha - Global */
+.why-we-do-it .container {
+  position: relative;
 }
