@@ -1,12 +1,15 @@
 import {
-  PostList,
+  WhyWeDoIt,
   Footer,
 } from './components';
+
+import './style.css';
 
 function App() {
   return (
     <>
     <Footer />
+    <WhyWeDoIt />
     </>
   );
 }
