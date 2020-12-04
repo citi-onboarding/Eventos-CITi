@@ -35,14 +35,14 @@
   .why-we-do-it p {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 401;
     font-size: 15px;
     line-height: 18px;
+    margin-top: 40px;
   }
 
   /* Título - Web FHD+ */
   .why-we-do-it h2 {
-    margin-bottom: 40px;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -102,12 +102,13 @@
   .why-we-do-it p {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 401;
     font-size: 15px;
     line-height: 18px;
     display: flex;
     align-items: center;
     width: 100%;
+    margin-top: 40px;
   }
 
   /* Título - Web */
@@ -153,7 +154,6 @@
     line-height: 34px;
     color: #292929;
     order: 1;
-    margin-bottom: 32px;
   }
 
   /* Imagem - Mobile */
@@ -161,7 +161,7 @@
     height: 100%;
     width: 100%;
     order: 2;
-    margin-bottom: 32px;
+    margin-top: 32px;;
   }
    
   #webImageWhyWeDoIt {
@@ -172,11 +172,12 @@
   .why-we-do-it p{
     font-family: 'Barlow', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 401;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
     order: 3;
+    margin-top: 32px;
   }
 
   /* Bolha - Mobile */
