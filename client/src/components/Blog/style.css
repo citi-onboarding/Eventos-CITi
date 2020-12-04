@@ -1,0 +1,95 @@
+/* Estilização web acima de Fulld HD+ */
+@media(min-width: 1920px) {
+  /* Centralização - FHD + */
+  .blog {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content:center;
+  }
+
+  .blog .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+  }
+
+  /* Título - Web FHD + */
+  .blog h2 {
+    margin-bottom: 40px;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 18px;
+    color: 292929, 100%;
+    margin: 0; 
+  }
+
+  /* Bolha - Web FHD + */
+
+  }
+
+
+/* Estilização Web Menor que FHD*/
+@media(max-width: 1920px) and (min-width: 1025px) {
+  /* Centralização - Web */
+  .blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+  .blog .container {
+    display: flex;
+    justify-content: space-between;
+    width: 62.5vw;
+  }
+
+  /* Título - Web */
+  .blog h2 {
+    margin-bottom: 40px;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 18px;
+    color: 292929, 100%;
+    margin: 0;
+  }
+
+  /* Bolha - Web */
+
+}
+
+
+
+/* Estilização mobile */
+@media(max-width: 1024px) {
+  
+  /* Centralização - Mobile */
+  .blog {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  /* Título - Mobile */
+  .blog h2{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: #292929;
+    order: 1;
+    margin-bottom: 32px;
+  }
+}
+
+  /* Bolha - Mobile */
+

@@ -3,8 +3,6 @@ import {
   Blog,
 } from './components';
 
-import './style.css';
-
 function App() {
   return (
     <>
