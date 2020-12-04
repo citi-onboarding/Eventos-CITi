@@ -35,7 +35,7 @@ export default function Banner() {
 
             <BubbleLeft className="BubbleLeft"/>
 
-            <BubbleRight className="BubbleRight"/>
+            <BubbleRght className="BubbleRight"/>
 
         </header>
     )

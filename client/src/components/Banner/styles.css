@@ -81,7 +81,6 @@
         display: flex;
         z-index: -1;
         justify-content: flex-end;
-        size: 50px;
     }
 
     .Banner .BubbleLeft{
