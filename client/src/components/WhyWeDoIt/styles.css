@@ -7,13 +7,13 @@
     justify-content:center;
   }
 
-  .container {
+  .why-we-do-it .container {
     display: flex;
     justify-content: space-between;
     width: 1200px;
   }
 
-  .content {
+  .why-we-do-it .content {
     display: flex;
     width: 436px;
     flex-direction: column;
@@ -73,14 +73,14 @@
   }
 
 
-  .container {
+  .why-we-do-it .container {
     display: flex;
     justify-content: space-between;
     width: 62.5vw;
   }
 
   /* Alinhamento dos textos - Web */
-  .content {
+  .why-we-do-it .content {
     width: 22.7vw;
     align-self: flex-start;
   }
