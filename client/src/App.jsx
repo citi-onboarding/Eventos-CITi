@@ -6,7 +6,6 @@ import {
 function App() {
   return (
     <>
-    <PostList />
     <Footer />
     </>
   );
