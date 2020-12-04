@@ -1,6 +1,6 @@
 import {
-  PostList,
   WhyWeDoIt,
+  Footer,
 } from './components';
 
 import './style.css';
@@ -8,7 +8,7 @@ import './style.css';
 function App() {
   return (
     <>
-    {/* <PostList /> */}
+    <Footer />
     <WhyWeDoIt />
     </>
   );

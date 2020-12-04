@@ -1,4 +1,5 @@
-import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt.jsx';
-import PostList from './PostList';
+import Footer from './Footer/Footer.jsx';
 
-export {WhyWeDoIt, PostList};
+import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt.jsx';
+
+export {Footer, WhyWeDoIt};
