@@ -1,1 +1,4 @@
-export { default as PostList } from './PostList';
+import Blog from './Blog/Blog';
+import PostList from './PostList';
+
+export {Blog, PostList};
