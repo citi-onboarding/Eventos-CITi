@@ -1,4 +1,5 @@
-import Blog from './Blog/Blog';
+import BlogSection from './BlogSection/BlogSection';
 import PostList from './PostList';
+import BlogCard from './BlogCard/BlogCard'
 
-export {Blog, PostList};
+export {BlogSection, PostList, BlogCard};

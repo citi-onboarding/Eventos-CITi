@@ -1,13 +1,15 @@
 import {
   PostList,
-  Blog,
+  BlogCard,
+  BlogSection,
 } from './components';
 
 function App() {
   return (
     <>
     <PostList />
-    <Blog/>
+    <BlogSection/>
+    <BlogCard/>
     </>
   );
 }
