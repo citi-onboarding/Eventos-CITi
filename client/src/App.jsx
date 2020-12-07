@@ -2,6 +2,7 @@ import {
   PostList,
   BlogCard,
   BlogSection,
+  BlogSlicker
 } from './components';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <PostList />
     <BlogSection/>
     <BlogCard/>
+    <BlogSlicker/>
     </>
   );
 }
