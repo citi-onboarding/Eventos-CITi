@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&display=swap');
 
-@media(min-width: 1025px) {
+@media(min-width: 1025px) and (max-width:1920px) {
 
     .Banner{
+        display: flex;
+        justify-content: space-between;
         position: relative;
+    }
 
+    .Banner .images{
+        position: relative;
+        top: 5%;
+    }
+
+    .Banner .content{
+        position: absolute;
+        top: 18.85vw;
+        left: 18.75vw;
+        width: 26vw;
+    }
+
+    .Banner .container{
+        display: flex;
+        width: 100vw;
     }
 
     .Banner h1{
@@ -23,9 +41,9 @@
     }
     
     .Banner p{
-        font-family: Barlow;
+        font-family: 'Barlow', sans-serif;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 501;
         font-size: 22px;
         line-height: 26px;
         
@@ -39,22 +57,30 @@
         display: flex;
         z-index: -1;
         justify-content: flex-end;
-        margin-left: 30%;
-        margin-top: -15%;
+        margin-left: 55vw;
+        margin-top: 5vw;
     }
 
     .Banner .BubbleLeft{
         display: flex;
-        margin-top: -600px;
+        top: 10vw;
     }
 
     .Banner .BubbleRight{
         position: absolute;
-        left: 805px;
-        top: -250px;
-        bottom: -174.44%;
+        left: 35vw;
+        z-index: -1;
+        top: -50vw;
     }
 }
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 1024px){

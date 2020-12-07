@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import {ReactComponent as BannerImage} from './imagens/banner.svg';
 import './styles.css'
-import {ReactComponent as BubbleLeft} from './imagens/bolha-esquerda-verde.svg';
-import {ReactComponent as BubbleRight} from './imagens/bolha-direita-azul.svg';
+import {ReactComponent as BannerImage} from './images/banner.svg';
+import {ReactComponent as BubbleLeft} from './images/left-bubble.svg';
+import {ReactComponent as BubbleRight} from './images/right-bubble.svg';
 
 export default function Banner() {
     const [Banner, setBanner] = useState();
@@ -22,21 +22,27 @@ export default function Banner() {
 
     return(
         <header className="Banner">
-        
-            <h1>
-                {Banner && Banner[0].title}
-            </h1>
+            <div className="container">
+                <div className="content">
+                    <h1>
+                        {Banner && Banner[0].title}
+                    </h1>
 
-            <p>
-                {Banner && Banner[0].caption}
-            </p>
+                    <p>
+                        {Banner && Banner[0].caption}
+                    </p>
+                </div>
 
-            <BannerImage className="BackgroundImage" />
+                <div className="images">
 
-            <BubbleLeft className="BubbleLeft"/>
+                    <BannerImage className="BackgroundImage" />
 
-            <BubbleRght className="BubbleRight"/>
+                    <BubbleRight className="BubbleRight"/>
 
+                </div>
+
+                    <BubbleLeft className="BubbleLeft"/>
+            </div>    
         </header>
     )
 }
