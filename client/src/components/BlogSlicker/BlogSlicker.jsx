@@ -19,9 +19,9 @@ export default function Blog () {
   };
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     rows: 2,
 
   };
@@ -34,17 +34,16 @@ export default function Blog () {
     
     <div className="blogSlicker" id="blogSlicker">
       <div className="container">
-      <h2> Single Item</h2>
         <Slider {...settings}>
-        <div>
-            <BlogCard/>
-        </div>
-        <div>
-            <h3>2</h3>
-        </div>
-        <div>
-            <h3>3</h3>
-        </div>
+        {blogSlicker?.map(({ name, image, link,description, date }) => (
+            <BlogCard
+            name = {name}
+            description= {description}
+            bloglink = {link}
+            imagelink = {image.secure_url}
+            date = {date}
+            />
+          ))}
         </Slider>
         
       </div>
