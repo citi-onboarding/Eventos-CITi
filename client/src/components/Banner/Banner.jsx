@@ -7,7 +7,7 @@ import {ReactComponent as BubbleLeft} from './images/left-bubble.svg';
 import {ReactComponent as BubbleRight} from './images/right-bubble.svg';
 
 export default function Banner() {
-    const [Banner, setBanner] = useState();
+    const [banner, setBanner] = useState();
 
     const loadBanner = async () => {
         const res = await axios.get('http://localhost:3001/api/banner');
@@ -19,30 +19,31 @@ export default function Banner() {
         loadBanner();
     }, []);
 
+console.log(banner);
 
     return(
         <header className="Banner">
+
+            <BubbleRight className="BubbleRight"/>
+
+            <BubbleLeft className="BubbleLeft"/>
+
             <div className="container">
                 <div className="content">
                     <h1>
-                        {Banner && Banner[0].title}
+                        {banner && banner[0].title}
                     </h1>
 
                     <p>
-                        {Banner && Banner[0].caption}
+                        {banner && banner[0].caption}
                     </p>
                 </div>
 
-                <div className="images">
+                <BannerImage className="BackgroundImage" />
 
-                    <BannerImage className="BackgroundImage" />
-
-                    <BubbleRight className="BubbleRight"/>
-
-                </div>
-
-                    <BubbleLeft className="BubbleLeft"/>
             </div>    
+
+
         </header>
     )
 }
