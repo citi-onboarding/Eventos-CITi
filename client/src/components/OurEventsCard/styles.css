@@ -1,6 +1,11 @@
+:root{
+    --proportion: calc( 100vw / 1920);
+}
+
 
 .ourEventsCard{
-    width: 30vw;
+    height: calc(613 * var(--proportion));
+    margin: 20px;
     border-style: solid;
 }
 .ourEventsCard img{

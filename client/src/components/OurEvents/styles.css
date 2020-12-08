@@ -1,6 +1,17 @@
 .our-events{
     display: flex;
     justify-content: center;
+    height: fit-content;
+}
+
+.slick-slide.slick-active.slick-center.slick-current {
+    transform: scale(1.05);
+}
+
+.slick-dots li button{
+    width: fit-content !important;
+    height: fit-content !important;
+    transform: scale(3);
 }
 
 .slick-slide {
