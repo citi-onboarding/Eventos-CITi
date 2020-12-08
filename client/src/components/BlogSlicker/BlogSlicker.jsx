@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import BlogCard from '../BlogCard/BlogCard';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import BlogWrap from '../BlogSection/BlogSection'
+import BlogWrap from '../BlogWrap/BlogWrap'
 
 
 

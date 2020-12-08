@@ -1,6 +1,6 @@
-import BlogSection from './BlogSection/BlogSection';
+import BlogSlicker from './BlogSlicker/BlogSlicker';
 import PostList from './PostList';
 import BlogCard from './BlogCard/BlogCard'
-import BlogSlicker from './BlogSlicker/BlogSlicker'
+import BlogWrap from './BlogWrap/BlogWrap'
 
-export {BlogSection, PostList, BlogCard, BlogSlicker};
+export {BlogSlicker, PostList, BlogCard, BlogWrap};

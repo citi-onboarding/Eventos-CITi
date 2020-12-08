@@ -2,6 +2,7 @@
 import React from 'react';
 import './style.css'
 import '../BlogSlicker/BlogSlicker'
+import '../BlogWrap/BlogWrap'
 
 
 export default function BlogCard (props) {

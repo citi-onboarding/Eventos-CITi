@@ -1,7 +1,7 @@
 import {
   PostList,
   BlogCard,
-  BlogSection,
+  BlogWrap,
   BlogSlicker
 } from './components';
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <PostList />
-    <BlogSection/>
+    <BlogWrap/>
     <BlogCard/>
     <BlogSlicker/>
     </>
