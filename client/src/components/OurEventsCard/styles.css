@@ -1,0 +1,18 @@
+
+.ourEventsCard{
+    width: 30vw;
+    border-style: solid;
+}
+.ourEventsCard img{
+    max-width: 300px;
+}
+
+.ourEventsCard a{
+    cursor: pointer;
+}
+
+/* Defines style to a desktop screen */
+@media (min-width: 1025px){
+    
+}
+

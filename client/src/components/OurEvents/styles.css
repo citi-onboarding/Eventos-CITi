@@ -1,0 +1,13 @@
+.our-events{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-slide {
+    width: 30vw;
+}
+
+
+.our-events .content{
+    width: 62.5vw;
+}
