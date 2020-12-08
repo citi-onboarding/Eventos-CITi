@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import BlogCard from '../BlogCard/BlogCard';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import BlogWrap from '../BlogSection/BlogSection'
 
 
 
@@ -17,34 +18,57 @@ export default function Blog () {
     const res = await axios.get('http://localhost:3001/api/blogpost'); //Api do Blog
     setBlogSlicker(res.data);
   };
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    rows: 2,
+    rows: 1,
 
   };
+ 
   useEffect(() => {
     loadBlogSlicker();
   }, []);
+
+  const [loadCards, setLoadCards] = useState();
+
+  const loadingCards = [];
+  useEffect(() => {
+    if (blogSlicker){
+      for (let i = 0; i < Math.ceil(blogSlicker.length/2); i+=1){
+        if (blogSlicker[i*2+1]) {
+          loadingCards.push([blogSlicker[i*2],blogSlicker[i*2+1]]);
+        } else {
+          loadingCards.push(blogSlicker[i*2]);
+
+        }
+      }
+    setLoadCards(loadingCards)
+    console.log(loadCards)
+    };
+  }, [blogSlicker]);
+
+
 
   // Código HTML
   return (
     
     <div className="blogSlicker" id="blogSlicker">
       <div className="container">
+        <h3>SLIDER!!</h3>
         <Slider {...settings}>
-        {blogSlicker?.map(({ name, image, link,description, date }) => (
-            <BlogCard
+        {loadCards?.map(({ name, image, link,description, date }) => (
+            <BlogWrap
             name = {name}
             description= {description}
             bloglink = {link}
-            imagelink = {image.secure_url}
             date = {date}
             />
           ))}
         </Slider>
+    
         
       </div>
     </div>
