@@ -24,7 +24,7 @@ function OurEvents(props) {
   return (
     <section className="our-events">
       <div className="content">
-        <h2> Single Item</h2>
+        <h2> Outros eventos</h2>
         <Slider {...settings}>
           {props.events.map((item) => {
             return(
