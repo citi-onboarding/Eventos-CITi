@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import Slider from "react-slick";
-import BlogCard from '../BlogCard/BlogCard';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import BlogWrap from '../BlogWrap/BlogWrap'
+import {ReactComponent as BlubbleSix} from './BubbleSix.svg'
 
 
 
@@ -26,6 +26,7 @@ export default function Blog () {
     slidesToScroll: 1,
     rows: 1,
     variableWidth:true,
+    arrows:false,
   };
  
   useEffect(() => {
@@ -56,6 +57,7 @@ export default function Blog () {
   // Código HTML
   return (
     <section className="blogSlider" id="blogSlider">
+      <BlubbleSix id="BubbleSix"/>
       <div className="container">
         <h3>Conheça nosso blog</h3>
         <Slider {...settings}>

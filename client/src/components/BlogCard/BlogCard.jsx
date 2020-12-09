@@ -4,7 +4,6 @@ import '../BlogSlicker/BlogSlicker'
 import '../BlogWrap/BlogWrap'
 import {ReactComponent as Vector} from './Vector.svg'
 
-
 export default function BlogCard (props) {
   return (
     <article className="blogCard" id="blogCard">
