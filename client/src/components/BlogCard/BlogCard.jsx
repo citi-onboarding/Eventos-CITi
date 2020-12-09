@@ -10,7 +10,7 @@ export default function BlogCard (props) {
         <img src={props.image} alt="Blog Card Image" className="BlogCardImage" />
         <div className="content">
           <p className="Date">Eventos / {props.date} </p>
-          <h3>{props.name}</h3>
+          <h4>{props.name}</h4>
           <p className="Description"> {props.description} </p>
           <a href={props.link}>Leia o texto completo <Vector/> </a>
         </div>

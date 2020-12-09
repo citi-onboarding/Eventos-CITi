@@ -82,7 +82,7 @@
   }
 
   .blogSlider h3 {
-    font-family: Barlow;
+    font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -95,8 +95,10 @@
 
   #BubbleSix {
     position: absolute;
-    top: 3vw;
-    right: 73vw;
+    top: 100vw;
+    right: 50vw;
+    width: 300px;
+    height: auto;
   }
 }
 
