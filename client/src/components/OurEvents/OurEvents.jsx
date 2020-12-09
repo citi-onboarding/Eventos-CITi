@@ -19,6 +19,8 @@ function OurEvents(props) {
         variableWidth: true
       };
 
+      
+
   return (
     <section className="our-events">
       <div className="content">

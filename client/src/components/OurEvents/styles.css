@@ -1,4 +1,4 @@
-.our-events{
+.our-events {
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -8,7 +8,7 @@
     transform: scale(1.05);
 }
 
-.slick-dots li button{
+.slick-dots li button {
     width: fit-content !important;
     height: fit-content !important;
     transform: scale(3);
@@ -18,7 +18,15 @@
     width: 30vw;
 }
 
-
-.our-events .content{
+.our-events .content {
     width: 62.5vw;
+}
+
+@media (min-width: 1920px) {
+    .our-events .content {
+        width: 1200px
+    }
+    .slick-slide {
+        width: 564px;
+    }
 }

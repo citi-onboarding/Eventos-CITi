@@ -1,13 +1,58 @@
 import React from 'react';
 import './styles.css';
+import { useState, useEffect } from 'react';
 function OurEventsCard(props) {
-    
+    var date = ""
+    var eventDate = new Date(props.eventDate)
+    var month = ""
+    console.log(eventDate.getMonth())
+    switch (eventDate.getMonth()) {
+        case 1:
+            month = "Janeiro"
+            break;
+        case 2:
+            month = "Fevereiro"
+            break;
+        case 3:
+            month = "Março"
+            break
+        case 4:
+            month = "Abril"
+            break
+        case 5:
+            month = "Maio"
+            break
+        case 6:
+            month = "Junho"
+            break;
+        case 7:
+            month = "Julho"
+            break;
+        case 8:
+            month = "Agosto"
+            break
+        case 9:
+            month = "Setembro"
+            break
+        case 10:
+            month = "Outubro"
+            break
+        case 11:
+            console.log("entrou")
+            month = "Novembro"
+            break
+        case 12:
+            month = "Dezembro"
+            break
+    }
+    date = "Última edição em "+eventDate.getDay()+" de " + month +" de "+ eventDate.getFullYear()
+
     return (
         <div className="ourEventsCard">
             <img src={props.secureUrl}></img>
             <h3>{props.name}</h3>
-            <p>{props.eventDate}</p>
-            <p>{props.local}</p>
+            <p className="date-and-local">{date}</p>
+            <p className="date-and-local">{props.local}</p>
             <p>{props.description}</p>
             <a href={props.knowMoreLink}>Inscreva-se</a>
         </div>
