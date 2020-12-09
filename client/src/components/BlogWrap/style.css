@@ -2,4 +2,21 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.cardContainer {
+  display: flex;
+  width: 62.5vw;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.topCard{
+  margin-bottom: 50px;
+  justify-content: flex-end;
+}
+
+.bottomCard{
+  align-self: flex-end;
 }

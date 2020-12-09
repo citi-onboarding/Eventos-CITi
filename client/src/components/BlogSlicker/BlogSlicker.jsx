@@ -21,11 +21,11 @@ export default function Blog () {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToScroll: 1,
     rows: 1,
-
+    variableWidth:true,
   };
  
   useEffect(() => {
@@ -33,6 +33,8 @@ export default function Blog () {
   }, []);
 
   const [loadCards, setLoadCards] = useState();
+
+  const element = []
 
   const loadingCards = [];
   useEffect(() => {
@@ -42,11 +44,10 @@ export default function Blog () {
           loadingCards.push([blogSlicker[i*2],blogSlicker[i*2+1]]);
         } else {
           loadingCards.push(blogSlicker[i*2]);
-
         }
       }
     setLoadCards(loadingCards)
-    console.log(loadCards)
+    console.log(loadingCards)
     };
   }, [blogSlicker]);
 
@@ -54,23 +55,25 @@ export default function Blog () {
 
   // Código HTML
   return (
-    
-    <div className="blogSlicker" id="blogSlicker">
+    <section className="blogSlider" id="blogSlider">
       <div className="container">
-        <h3>SLIDER!!</h3>
+        <h3>Conheça nosso blog</h3>
         <Slider {...settings}>
-        {loadCards?.map(({ name, image, link,description, date }) => (
-            <BlogWrap
-            name = {name}
-            description= {description}
-            bloglink = {link}
-            date = {date}
-            />
-          ))}
+        {loadCards?.map((array) => {
+      	return <BlogWrap
+        element = {[array]}
+        elementx = {array}/>
+        })} 
         </Slider>
-    
-        
       </div>
-    </div>
+    </section>
   );
 }
+
+
+
+
+// {loadCards?.map((element) => {
+//   <BlogWrap
+//   element = {element}/>
+// })}
