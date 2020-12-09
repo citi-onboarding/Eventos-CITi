@@ -47,10 +47,6 @@
         margin-left: 10%;
         margin-top: 2%;
     }
-    
-    .Banner .BackgroundImage{
-        
-    }
 
     #root{
         overflow-x: hidden;
@@ -77,6 +73,52 @@
 
 
 @media(max-width: 1024px){
+
+    .Banner .BubbleRight{
+        right: -1700px;
+        top: -1060px;
+    }
+
+    .Banner .BubbleLeft{
+        display: flex;
+        bottom: -100px;
+        position: absolute;
+        left: -520px;
+    }
+
+    .Banner .BackgroundImage{
+        width: 500px;
+        margin-top: -260px;
+        margin-left: 150px;
+    }
+
+    .Banner h1{
+        margin-left: 10%;
+        margin-top: 40%;
+    }
+
+    .Banner p{
+    }
+
+    .Banner .container{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     .Banner{
 
     }
@@ -111,5 +153,5 @@
         left: 100px;
         top: -400px;
         bottom: -174.44%;
-    }
+    }*/
 }
