@@ -4,11 +4,59 @@
 }
 
 .ourEventsCard {
+    display: flex;
+    flex-direction: column;
     font-family: 'Barlow', sans-serif;
     height: calc(613 * var(--proportion));
     margin: 20px;
     box-shadow: 0px 9.31395px 9.31395px rgba(52, 51, 50, 0.3);
     font-size: 19px;
+    line-height: 22px;
+}
+
+.ourEventsCard h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 0px;
+    margin: 10px;
+}
+
+.ourEventsCard .dateAndLocal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #343332;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ourEventsCard .dateAndLocal p {
+    display: flex;
+    margin: 10px;
+}
+
+.ourEventsCard .dateAndLocal p img {
+    margin-right: 5px;
+}
+
+.ourEventsCard .knowMore {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.ourEventsCard .knowMore img {
+    margin-left: 10px;
+}
+
+.ourEventsCard .description {
+    margin-left: 10px;
+}
+
+.ourEventsCard .description p {
+    margin-top: 8px;
+    line-height: 23px;
 }
 
 .ourEventsCard img {
@@ -16,10 +64,11 @@
 }
 
 .ourEventsCard a {
-    cursor: pointer;
+    text-decoration: none;
+    color: #343332;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 
 /* Defines style to a desktop screen */
-
-@media (min-width: 1025px) {}
