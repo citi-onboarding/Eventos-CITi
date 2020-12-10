@@ -55,7 +55,7 @@ export default function Blog () {
 
   // Código HTML
   return (
-    <section className="blogSlider" id="blogSlider">
+    <section className="blogSlider" id="GetToKnowOurBlog">
       <BlubbleSix id="BubbleSix"/>
       <div className="container">
         <h3>Conheça nosso blog</h3>

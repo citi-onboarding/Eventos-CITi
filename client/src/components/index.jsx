@@ -1,6 +1,6 @@
-import BlogSlicker from './BlogSlicker/BlogSlicker';
+import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
 import PostList from './PostList';
 import BlogCard from './BlogCard/BlogCard'
 import BlogWrap from './BlogWrap/BlogWrap'
 
-export {BlogSlicker, PostList, BlogCard, BlogWrap};
+export {GetToKnowOurBlog, PostList, BlogCard, BlogWrap};

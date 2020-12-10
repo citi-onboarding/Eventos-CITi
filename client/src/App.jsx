@@ -1,13 +1,13 @@
 import {
   PostList,
-  BlogSlicker
+  GetToKnowOurBlog
 } from './components';
 
 function App() {
   return (
     <>
     <PostList />
-    <BlogSlicker/>
+    <GetToKnowOurBlog/>
     </>
   );
 }

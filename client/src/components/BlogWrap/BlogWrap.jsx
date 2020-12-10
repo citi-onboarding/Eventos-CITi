@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css' 
 import BlogCard from '../BlogCard/BlogCard';
-import '../BlogSlicker/BlogSlicker'
+import '../GetToKnowOurBlog/GetToKnowOurBlog'
 
 export default function BlogWrap (props) {
   function RenderCards (){
