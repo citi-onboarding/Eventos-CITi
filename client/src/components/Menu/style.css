@@ -5,6 +5,12 @@
     height: 0;
   }
 
+  .menuButton {
+    visibility: collapse;
+    width: 0;
+    height: 0;
+  }
+
   .menu {
     display: flex;
     width: 100vw;
@@ -60,6 +66,12 @@
 
 @media (min-width:1025px) and (max-width: 1920px) {
   .socialMenu {
+    visibility: collapse;
+    width: 0;
+    height: 0;
+  }
+
+  .menuButton {
     visibility: collapse;
     width: 0;
     height: 0;
@@ -168,5 +180,36 @@
     width: auto;
     height: 6.6vw;
   }
-}
 
+  /* When Menu is Toggled */
+  .menu.change {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .menu.change .socialMenu {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu.change .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu.change {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .menu.change #CITiLogo{
+    visibility: collapse;
+  }
+
+}

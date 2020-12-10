@@ -6,7 +6,17 @@ import {ReactComponent as FacebookIcon} from './FacebookIcon.svg';
 import {ReactComponent as LinkdInIcon} from './LinkdInIcon.svg';
 import {ReactComponent as InstagramIcon} from './InstagramIcon.svg';
 
+
 export default function Menu() {
+  let menuButton = "yyyyyyyyy";
+
+  function handleClick() {
+    const renderMenu = document.querySelector(".menu")
+    if (renderMenu){
+      renderMenu.classList.toggle("change");
+    }
+  }
+
   return (
     <nav className="menu">
       <div className="container">
@@ -24,8 +34,16 @@ export default function Menu() {
           <li><a href="#GetToKnowOurBlog">Conheça nosso blog</a></li>
           <li><a href="#Contact">Contato</a></li>
         </ul>
+        <a className="menuButton"  onClick={handleClick}>AAAAAAAAAAAAAA</a>
       </div>
     </nav> 
   );
 }
 
+
+
+// function handleClick() {
+//   button.classList.toggle("change")
+// }
+
+// onClick={handleClick}
