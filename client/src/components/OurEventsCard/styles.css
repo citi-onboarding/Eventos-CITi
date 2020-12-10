@@ -72,7 +72,37 @@
     }
     /* Defines style to a desktop screen */
     
-    @media (min-width: 1024px) and (max-width: 1800px) {
+    @media (min-width: 1024px) and (max-width: 1249px) {
+        .ourEventsCard h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        .ourEventsCard .dateAndLocal p {
+            font-size: 0.8rem;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .ourEventsCard .dateAndLocal p img {
+            height: 20px;
+        }
+        p.description {
+            font-size: 0.6rem;
+            line-height: normal;
+        }
+        .ourEventsCard .knowMore {
+            bottom: 30px;
+            right: 30px;
+        }
+        .ourEventsCard .knowMore a {
+            font-size: 15px;
+        }
+        .ourEventsCard .knowMore img {
+            margin-left: 3px;
+            padding-top: 3px;
+        }
+    }
+    
+    @media (min-width: 1250px) and (max-width: 1800px) {
         .ourEventsCard .dateAndLocal {
             margin-bottom: 0px;
             font-size: 0.7rem;
