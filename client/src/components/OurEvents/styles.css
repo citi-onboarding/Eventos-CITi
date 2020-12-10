@@ -48,6 +48,9 @@
     .slick-slider {
         max-height: 550px;
     }
+    .slick-list {
+        max-height: 550px;
+    }
     .our-events .content {
         width: 100vw;
     }
