@@ -33,7 +33,7 @@
 }
 
 /* Web - Responsive */
-@media  (min-width: 1024px) and (max-width: 1920px){
+@media (min-width: 1025px) and (max-width: 1919px){
   .blogSlider {
     display: flex;
     margin-top: 40px; 
@@ -80,7 +80,7 @@
   .blogSlider .container {
     display: flex;
     flex-direction: column;
-    width: calc(100vw - 32px);
+    width: calc(91.7vw + 20px);
   }
 
   .blogSlider h3 {
@@ -89,10 +89,7 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
-    display: flex;
-    align-items: center;
-
-
+    margin-left: 10px;
   }
 
   #BubbleSix {
