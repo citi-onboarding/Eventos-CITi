@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+import {ReactComponent as CITiEventosLogo} from './CITiEventosLogo.svg';
 import {ReactComponent as FacebookIcon} from './FacebookIcon.svg';
 import {ReactComponent as LinkdInIcon} from './LinkdInIcon.svg';
 import {ReactComponent as InstagramIcon} from './InstagramIcon.svg';
@@ -9,7 +10,7 @@ export default function Menu() {
   return (
     <nav className="menu">
       <div className="container">
-        <p>ABACATÃO</p>
+         <CITiEventosLogo/>
         <ul className="socialMenu">
           <li><FacebookIcon/></li>
           <li><LinkdInIcon/></li>
