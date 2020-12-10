@@ -5,8 +5,8 @@ body {
 }
 
 #root {
+  width: 100vw;
   overflow-x: hidden;
-  position: absolute;
   left: 0;
   top: 0;
   position: relative;
