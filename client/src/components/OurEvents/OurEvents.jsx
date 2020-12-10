@@ -22,7 +22,7 @@ function OurEvents(props) {
       
 
   return (
-    <section className="our-events">
+    <section className="our-events" id="our-events">
       <div className="content">
         <h2> Outros eventos</h2>
         <Slider {...settings}>
