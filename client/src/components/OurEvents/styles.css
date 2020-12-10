@@ -58,3 +58,12 @@
         width: 80vw;
     }
 }
+
+@media (min-width: 580px) {
+    .slick-slider {
+        max-height: 700px;
+    }
+    .slick-list {
+        max-height: 700px;
+    }
+}
