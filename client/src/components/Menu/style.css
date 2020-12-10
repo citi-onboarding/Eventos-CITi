@@ -147,6 +147,7 @@
     left: 0;
     justify-content: center;
     top: 0;
+    align-items: center;
   }
 
   .sectionsMenu {
@@ -169,11 +170,12 @@
   }
 
   .menu .container {
+    justify-self: center;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row-reverse;
     align-items: center;
     width: calc(100vw - 32px);
+    justify-content: space-between;
   }
 
   #CITiLogo {
@@ -194,6 +196,10 @@
     position: relative;
     display: flex;
     flex-direction: row;
+  }
+
+  .menu.change .sectionsMenu {
+    visibility: visible;
   }
 
   .menu.change .container {
