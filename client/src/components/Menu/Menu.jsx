@@ -1,15 +1,18 @@
 import React from 'react';
+import './style.css';
 
-import './style.css'
+import {ReactComponent as FacebookIcon} from './FacebookIcon.svg';
+import {ReactComponent as LinkdInIcon} from './LinkdInIcon.svg';
+import {ReactComponent as InstagramIcon} from './InstagramIcon.svg';
 
 export default function Menu() {
   return (
     <nav>
       <div className="container">
         <ul className="socialMenu">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><FacebookIcon/></li>
+          <li><LinkdInIcon/></li>
+          <li><InstagramIcon/></li>
         </ul>
         <ul className="sectionsMenu">
           <li><a href="#Banner">Início</a></li>
