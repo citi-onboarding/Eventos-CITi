@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.slick-dots li button:before {
+    width: 5px;
+    height: 5px;
+}
+
 .our-events h2 {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
