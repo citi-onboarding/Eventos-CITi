@@ -44,7 +44,7 @@
   .blogSlider .container {
     display: flex;
     flex-direction: column;
-    width: 62.5vw;
+    width: calc(62.5vw);
     height: 52vw;
   }
 

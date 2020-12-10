@@ -59,11 +59,22 @@
   }
 }
 
+.cardContainer {
+}
+
 /* Sets Image Direction */
 .bottomCard .blogCard {
   flex-direction: row-reverse;
 }
 
+.bottomCard .blogCard img {
+  border-radius: 0px 4px 4px 0px;
+}
+
 .topCard .blogCard {
   flex-direction: row;
+}
+
+.topCard .blogCard img {
+  border-radius: 4px 0px 0px 4px;
 }
