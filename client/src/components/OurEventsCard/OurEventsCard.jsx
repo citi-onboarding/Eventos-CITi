@@ -8,44 +8,42 @@ function OurEventsCard(props) {
     var date = ""
     var eventDate = new Date(props.eventDate)
     var month = ""
-    console.log(eventDate.getMonth())
     switch (eventDate.getMonth()) {
         case 1:
-            month = "Janeiro"
+            month = "janeiro"
             break;
         case 2:
-            month = "Fevereiro"
+            month = "fevereiro"
             break;
         case 3:
-            month = "Março"
+            month = "março"
             break
         case 4:
-            month = "Abril"
+            month = "abril"
             break
         case 5:
-            month = "Maio"
+            month = "maio"
             break
         case 6:
-            month = "Junho"
+            month = "junho"
             break;
         case 7:
-            month = "Julho"
+            month = "julho"
             break;
         case 8:
-            month = "Agosto"
+            month = "agosto"
             break
         case 9:
-            month = "Setembro"
+            month = "setembro"
             break
         case 10:
-            month = "Outubro"
+            month = "outubro"
             break
         case 11:
-            console.log("entrou")
-            month = "Novembro"
+            month = "novembro"
             break
         case 12:
-            month = "Dezembro"
+            month = "dezembro"
             break
     }
     date = "Última edição em " + eventDate.getDay() + " de " + month + " de " + eventDate.getFullYear()
