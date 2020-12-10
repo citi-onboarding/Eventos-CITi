@@ -7,7 +7,7 @@ import {ReactComponent as InstagramIcon} from './InstagramIcon.svg';
 
 export default function Menu() {
   return (
-    <nav>
+    <nav className="menu">
       <div className="container">
         <ul className="socialMenu">
           <li><FacebookIcon/></li>
