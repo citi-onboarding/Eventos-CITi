@@ -48,7 +48,6 @@ export default function Blog () {
         }
       }
     setLoadCards(loadingCards)
-    console.log(loadingCards)
     };
   }, [blogSlicker]);
 

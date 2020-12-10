@@ -4,8 +4,6 @@ import BlogCard from '../BlogCard/BlogCard';
 import '../BlogSlicker/BlogSlicker'
 
 export default function BlogWrap (props) {
-  console.log(props.element) 
-  
   function RenderCards (){
     if (props.element && props.element[0].name) {
       return(
