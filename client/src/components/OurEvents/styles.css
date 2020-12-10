@@ -45,6 +45,9 @@
         margin-left: 20px;
         font-size: 28px;
     }
+    .slick-slider {
+        max-height: 550px;
+    }
     .our-events .content {
         width: 100vw;
     }
