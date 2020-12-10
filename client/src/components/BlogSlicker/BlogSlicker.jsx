@@ -25,7 +25,7 @@ export default function Blog () {
     speed: 500,
     slidesToScroll: 1,
     rows: 1,
-    variableWidth:true,
+    variableWidth:false,
     arrows:false,
   };
  
@@ -72,10 +72,3 @@ export default function Blog () {
   );
 }
 
-
-
-
-// {loadCards?.map((element) => {
-//   <BlogWrap
-//   element = {element}/>
-// })}
