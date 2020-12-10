@@ -219,7 +219,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 18px;    
+    line-height: 20px;    
     color: #292929;
     padding: 0;
     position: absolute;
@@ -240,6 +240,12 @@
 
   .ReadMoreWeb {
     visibility: collapse;
+  }
+
+  #blogVector {
+    width: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -296,12 +302,13 @@
   }
   
   .blogCard a {
+    display: flex;
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 18px;    
+    line-height: 20px;    
     color: #292929;
     padding: 0;
     position: absolute;
@@ -322,6 +329,12 @@
 
   .ReadMoreWeb {
     visibility: collapse;
+  }
+
+  #blogVector {
+    width: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 

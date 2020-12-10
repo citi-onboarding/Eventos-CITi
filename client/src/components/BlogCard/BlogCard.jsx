@@ -55,7 +55,7 @@ export default function BlogCard (props) {
           <p className="Date">Eventos / {date} </p>
           <h4>{props.name}</h4>
           <p className="description"> {props.description} </p>
-          <a href={props.link} className="ReadMoreMobile">Leia<Vector/></a>
+          <a href={props.link} className="ReadMoreMobile">Leia  &nbsp; <Vector id="blogVector"/></a>
           <a href={props.link} className="ReadMoreWeb">Leia o texto completo <Vector/></a>
         </div>
     </article>
