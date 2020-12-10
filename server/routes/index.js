@@ -1,6 +1,7 @@
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
+const mailServer = require('../mailServer/mailServer.js');
 
 const Post = keystone.list('Posts');
 const Events = keystone.list('Events');
@@ -79,7 +80,11 @@ module.exports = (app) => {
         Email: ${email}
         Mensagem: ${message}
       `;
-
+            await mailServer({
+                destinationUser: process.env.CLIENT_EMAIL,
+                subjectText: subject,
+                textOption: body,
+            });
 
             res.status(200).send('Everything went good');
         } catch (error) {
