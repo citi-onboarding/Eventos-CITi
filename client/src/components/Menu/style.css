@@ -1,4 +1,4 @@
-@media (min-width:1025px) {
+@media (min-width:1921px) {
   .socialMenu {
     visibility: collapse;
     width: 0;
@@ -31,13 +31,19 @@
     font-size: 19px;
     line-height: 23px;
     color: #292929;
+    margin-left: 32px;
+  }
+
+  .menu ul {
+    list-style-type: none;
   }
 
   .menu .container {
     display: flex;
-    width: 64.5vw;
+    width: 1200px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .menu .container .sectionsMenu {
@@ -45,4 +51,69 @@
     justify-self: flex-end;
   }
 
+  #CITiLogo {
+    width: auto;
+    height: 43px;
+  }
 }
+
+
+@media (min-width:1025px) and (max-width: 1920px) {
+  .socialMenu {
+    visibility: collapse;
+    width: 0;
+    height: 0;
+  }
+
+  .menu {
+    display: flex;
+    width: 100vw;
+    background-color: #FCFCFC;
+    box-shadow: 0px 4.5px 4.5px rgba(52, 51, 50, 0.3);
+    height: 4.17vw;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    justify-content: center;
+    top: 0;
+  }
+
+  .sectionsMenu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sectionsMenu a {
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 1.1vw;
+    color: #292929;
+    margin-left: 1.7vw;
+  }
+
+  .menu ul {
+    list-style-type: none;
+  }
+
+  .menu .container {
+    display: flex;
+    width: 64.5vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu .container .sectionsMenu {
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  #CITiLogo {
+    width: auto;
+    height: 2.2vw;
+  }
+}
+

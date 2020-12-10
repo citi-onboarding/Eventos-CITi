@@ -10,7 +10,7 @@ export default function Menu() {
   return (
     <nav className="menu">
       <div className="container">
-         <CITiEventosLogo/>
+         <CITiEventosLogo id="CITiLogo"/>
         <ul className="socialMenu">
           <li><FacebookIcon/></li>
           <li><LinkdInIcon/></li>
