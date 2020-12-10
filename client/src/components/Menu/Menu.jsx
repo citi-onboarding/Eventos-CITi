@@ -9,6 +9,7 @@ export default function Menu() {
   return (
     <nav className="menu">
       <div className="container">
+        <p>ABACATÃO</p>
         <ul className="socialMenu">
           <li><FacebookIcon/></li>
           <li><LinkdInIcon/></li>
