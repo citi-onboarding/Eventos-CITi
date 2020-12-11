@@ -1,6 +1,12 @@
-import Footer from './Footer/Footer.jsx';
-import SubsCriptionModal from './SubscriptionModal/SubscriptionModal.jsx';
 import ModalCreator from './SubscriptionModal/modalCreator.jsx'
-import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt.jsx';
+import BlogCard from './BlogCard/BlogCard';
+import BlogWrap from './BlogWrap/BlogWrap';
+import Footer from './Footer/Footer';
+import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
+import OurEvents from './OurEvents/OurEvents';
+import OurEventsCard from './OurEventsCard/OurEventsCard';
+import PostList from './PostList';
+import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt';
 
-export {Footer, WhyWeDoIt, ModalCreator};
+
+export {BlogCard, BlogWrap, Footer, GetToKnowOurBlog, OurEvents, OurEventsCard, PostList, WhyWeDoIt, ModalCreator};

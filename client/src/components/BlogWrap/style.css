@@ -1,0 +1,78 @@
+/* Web - Bigger */
+@media (min-width: 1920px) { 
+  .blogWrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .cardContainer {
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .topCard{
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  .bottomCard{
+    align-self: flex-end;
+  }
+}
+
+
+/* Web - Responsive */
+@media (min-width: 1025px) and (max-width: 1919px) { 
+  .blogWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .cardContainer {
+    display: flex;
+    width: 62.5vw;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .topCard{
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  .bottomCard{
+    align-self: flex-end;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 1024px){
+  .topCard {
+    margin-bottom: 32px;
+  }
+}
+
+
+/* Sets Image Direction */
+.bottomCard .blogCard {
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.bottomCard .blogCard img {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.topCard .blogCard {
+  flex-direction: row;
+}
+
+.topCard .blogCard img {
+  border-radius: 4px 0px 0px 4px;
+}
