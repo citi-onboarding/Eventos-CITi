@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+.our-events {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li button:before {
+    width: 5px;
+    height: 5px;
+}
+
+.our-events h2 {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 18px;
+}
+
+.slick-slide.slick-active.slick-center.slick-current {
+    transform: scale(1.05);
+}
+
+.slick-dots li button {
+    width: fit-content !important;
+    height: fit-content !important;
+    transform: scale(3);
+}
+
+.slick-slide {
+    width: 30vw;
+}
+
+.our-events .content {
+    width: 62.5vw;
+}
+
+@media (min-width: 1921px) {
+    .our-events .content {
+        width: 1200px;
+    }
+    .slick-slide {
+        width: 564px;
+        max-height: 800px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .our-events .content h2 {
+        margin-left: 22px;
+        font-size: 28px;
+    }
+    .slick-slider {
+        max-height: 550px;
+    }
+    .slick-list {
+        max-height: 550px;
+    }
+    .our-events .content {
+        width: 100vw;
+    }
+    .slick-slide {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 580px) {
+    .slick-slider {
+        max-height: 700px;
+    }
+    .slick-list {
+        max-height: 700px;
+    }
+}
