@@ -5,6 +5,7 @@
 
   #BurguerBubble{
     visibility: collapse;
+    width: 0;
   }
 
   .socialMenu {
@@ -91,6 +92,7 @@
 
   #BurguerBubble{
     visibility: collapse;
+    width: 0;
   }
 
   .socialMenu {
