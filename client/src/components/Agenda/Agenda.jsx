@@ -1,12 +1,11 @@
 import React from 'react';
 import Slider from "react-slick";
-import OurEventsCard from "../OurEventsCard/OurEventsCard.jsx"
+import AgendaCard from "../AgendaCard/AgendaCard.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
 import './style.css';
 
-function OurEvents(props) {
+export default function Agenda(props) {
     
     const settings = {
         dots: true,
@@ -20,13 +19,14 @@ function OurEvents(props) {
       };
 
   return (
-    <section className="our-events" id="our-events">
+    <section className="agenda" id="agenda">
       <div className="content">
         <h2>Agenda</h2>
         <Slider {...settings}>
           {props.newEvents.map((item) => {
             return(
-              <OurEventsCard 
+              <AgendaCard 
+                subscriptionDeadline={item.subscriptionDeadline}
                 secureUrl = {item.images[0].secure_url}
                 name={item.name}
                 eventDate={item.eventDate}
@@ -41,5 +41,3 @@ function OurEvents(props) {
       </section>
   );
 }
-
-export default OurEvents;

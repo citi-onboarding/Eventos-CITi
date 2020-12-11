@@ -2,8 +2,7 @@
 :root {
    --proportion: calc( 100vw / 1920);
 }
-
-.ourEventsCard {
+.agendaCard {
    display: flex;
    flex-direction: column;
    font-family: 'Barlow', sans-serif;
@@ -12,16 +11,28 @@
    box-shadow: 0px 9.31395px 9.31395px rgba(52, 51, 50, 0.3);
    font-size: 19px;
    line-height: 22px;
+   border-radius: 4px;
 }
 
-.ourEventsCard h3 {
+.agendaCard .subscriptionDeadline{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.agendaCard h3 {
    font-weight: 700;
    font-size: 22px;
    margin-left: 0px;
    margin: 10px;
 }
 
-.ourEventsCard .dateAndLocal {
+.agendaCard .dateAndLocal {
    margin: 0;
    padding: 0;
    display: flex;
@@ -30,41 +41,41 @@
    font-size: 16px;
 }
 
-.ourEventsCard .dateAndLocal p {
+.agendaCard .dateAndLocal p {
    display: flex;
    margin: 10px;
 }
 
-.ourEventsCard .dateAndLocal p img {
+.agendaCard .dateAndLocal p img {
    margin-right: 5px;
 }
 
-.ourEventsCard .knowMore {
+.agendaCard .knowMore {
    display: flex;
    position: absolute;
    bottom: 40px;
    right: 40px;
 }
 
-.ourEventsCard .knowMore img {
+.agendaCard .knowMore img {
    margin-left: 10px;
 }
 
-.ourEventsCard .description {
+.agendaCard .description {
    margin-left: 10px;
 }
 
-.ourEventsCard .description p {
+.agendaCard .description p {
    margin-top: 8px;
    font-weight: 401;
    line-height: 23px;
 }
 
-.ourEventsCard img {
+.agendaCard img {
    max-width: 100%;
 }
 
-.ourEventsCard a {
+.agendaCard a {
    text-decoration: none;
    color: #343332;
    font-size: 22px;
@@ -73,70 +84,82 @@
 /* Defines style to a desktop screen */
 
 @media (min-width: 1024px) and (max-width: 1249px) {
-   .ourEventsCard h3 {
+    .agendaCard .subscriptionDeadline{
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.98vw;
+        line-height: 1.2vw;
+        margin-bottom: 0;
+        margin-top: 0.4vw;
+        margin-left: 10px;
+    }
+
+   .agendaCard h3 {
        font-size: 20px;
        margin-bottom: 0px;
    }
-   .ourEventsCard .dateAndLocal p {
+   .agendaCard .dateAndLocal p {
        font-size: 0.8rem;
        margin-bottom: 0px;
-       margin-top: 0px;
+       margin-top: 0px;   
    }
-   .ourEventsCard .dateAndLocal p img {
+   .agendaCard .dateAndLocal p img {
        height: 20px;
    }
    p.description {
        font-size: 0.6rem;
        line-height: normal;
    }
-   .ourEventsCard .knowMore {
+   .agendaCard .knowMore {
        bottom: 30px;
        right: 30px;
    }
-   .ourEventsCard .knowMore a {
+   .agendaCard .knowMore a {
        font-size: 15px;
    }
-   .ourEventsCard .knowMore img {
+   .agendaCard .knowMore img {
        margin-left: 3px;
        padding-top: 3px;
    }
 }
 
 @media (min-width: 1250px) and (max-width: 1800px) {
-   .ourEventsCard .dateAndLocal {
+   .agendaCard .dateAndLocal {
        margin-bottom: 0px;
        font-size: 0.7rem;
    }
-   .ourEventsCard .dateAndLocal img {
+   .agendaCard .dateAndLocal img {
        margin-top: -5px;
    }
-   .ourEventsCard .dateAndLocal p {
+   .agendaCard .dateAndLocal p {
        margin-bottom: 0px;
    }
-   .ourEventsCard {
+   .agendaCard {
        font-size: 0.7rem;
        line-height: normal;
    }
-   .ourEventsCard a {
+   .agendaCard a {
        font-size: 1rem;
    }
 }
 
 @media (min-width: 1800px) {
-   .ourEventsCard {
+   .agendaCard {
        font-size: 19px;
+       border-radius: 4px;
    }
 }
 
 @media (max-width: 1023px) {
-   .ourEventsCard .dateAndLocal {
+   .agendaCard .dateAndLocal {
        margin-bottom: 0px;
        font-size: 0.7rem;
    }
-   .ourEventsCard .dateAndLocal p {
+   .agendaCard .dateAndLocal p {
        margin-bottom: 0px;
    }
-   .ourEventsCard {
+   .agendaCard {
        height: 513px !important;
        font-size: 15px;
        line-height: 18px;
@@ -145,13 +168,15 @@
 }
 
 @media (min-width: 580px) and (max-width: 1024px) {
-   .ourEventsCard {
+   .agendaCard {
        height: 700px !important;
+       border-radius: 4px;
    }
 }
 
 @media (min-width: 1921px) {
-   .ourEventsCard {
+   .agendaCard {
        height: 613px!important;
+       border-radius: 4px;
    }
 }
