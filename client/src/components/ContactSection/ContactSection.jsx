@@ -1,6 +1,10 @@
 import './styles.css';
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+import bolha from './images/bolha.svg';
+import linkedin from './images/linkedin.svg'
+import facebook from './images/facebook.svg'
+import instagram from './images/facebook.svg'
 function ContactSection(props) {
 
 
@@ -29,44 +33,48 @@ function ContactSection(props) {
     };
 
     return (
-        <section id="contact-section">
-            <form onSubmit={handleSubmit}>
-                <h2>Fale conosco</h2>
-                <div className="form" />
-                <p>Nome</p>
-                <input
-                    required
-                    type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <p>E-mail</p>
-                <input
-                    required
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                    required
-                    type="text"
-                    placeholder="Telefone"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                />
-                <textarea
-                    required
-                    placeholder="Mensagem?"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                />
-                <input type="submit" value="Confirmar inscrição" />
-            </form>
+        <section id="contact" className="contact-place">
+            <div className="contact-content">
+                <form onSubmit={handleSubmit}>
+                    <h2>Fale conosco</h2>
+                    <div className="form" />
+                    <p>Nome</p>
+                    <input
+                        required
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <p>E-mail</p>
+                    <input
+                        required
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input
+                        required
+                        type="text"
+                        placeholder="Telefone"
+                        value={phone}
+                        className="contact-phone"
+                        onChange={(e) => setPhone(e.target.value)}
+                    />
+                    <textarea
+                        required
+                        placeholder="Mensagem"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                    />
+                    <input type="submit" value="Confirmar inscrição" />
+                </form>
 
-            <div className="social-network-contact">
-                <p>@citiufpe</p>
-                <p>/company/citiufpe</p>
-                <p>/citiufpe/</p>
+                <div className="social-network-contact">
+                    <p><img src={instagram}/>@citiufpe</p>
+                    <p>/<img src={linkedin}/>company/citiufpe</p>
+                    <p><img src={facebook}/>/citiufpe/</p>
+                    <img src={bolha} alt="imagem decorativa"/>
+                </div>
             </div>
         </section>
     );
