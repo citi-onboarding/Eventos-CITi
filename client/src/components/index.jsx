@@ -1,6 +1,11 @@
+import BlogCard from './BlogCard/BlogCard';
+import BlogWrap from './BlogWrap/BlogWrap';
+import Footer from './Footer/Footer';
 import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
-import Footer from './Footer/Footer.jsx';
-import OurEvents from './OurEvents/OurEvents.jsx'
-import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt.jsx';
+import OurEvents from './OurEvents/OurEvents';
+import OurEventsCard from './OurEventsCard/OurEventsCard';
+import PostList from './PostList';
+import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt';
 
-export {GetToKnowOurBlog, PostList, BlogCard, BlogWrap};
+
+export {BlogCard, BlogWrap, Footer, GetToKnowOurBlog, OurEvents, OurEventsCard, PostList, WhyWeDoIt};
