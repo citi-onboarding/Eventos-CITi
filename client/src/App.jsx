@@ -2,6 +2,7 @@ import {
   WhyWeDoIt,
   Footer,
   OurEvents,
+  Agenda,
 } from './components';
 import React from 'react';
 import axios from 'axios';
@@ -44,7 +45,10 @@ function App() {
     <>
     <Footer />
     <WhyWeDoIt />
-    <OurEvents events={ourEvents}/>
+    <Agenda
+    newEvents={agendaEvents}/>
+    <OurEvents
+     oldEvents={ourEvents}/>
     </>
   );
 }

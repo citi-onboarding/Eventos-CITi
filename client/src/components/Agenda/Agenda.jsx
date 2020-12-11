@@ -4,7 +4,7 @@ import OurEventsCard from "../OurEventsCard/OurEventsCard.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import './styles.css';
+import './style.css';
 
 function OurEvents(props) {
     
@@ -22,9 +22,9 @@ function OurEvents(props) {
   return (
     <section className="our-events" id="our-events">
       <div className="content">
-        <h2> Outros eventos</h2>
+        <h2>Agenda</h2>
         <Slider {...settings}>
-          {props.oldEvents.map((item) => {
+          {props.newEvents.map((item) => {
             return(
               <OurEventsCard 
                 secureUrl = {item.images[0].secure_url}

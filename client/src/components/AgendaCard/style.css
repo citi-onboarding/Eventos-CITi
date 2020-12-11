@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+:root {
+   --proportion: calc( 100vw / 1920);
+}
+
+.ourEventsCard {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Barlow', sans-serif;
+   height: calc(613 * var(--proportion));
+   margin: 20px;
+   box-shadow: 0px 9.31395px 9.31395px rgba(52, 51, 50, 0.3);
+   font-size: 19px;
+   line-height: 22px;
+}
+
+.ourEventsCard h3 {
+   font-weight: 700;
+   font-size: 22px;
+   margin-left: 0px;
+   margin: 10px;
+}
+
+.ourEventsCard .dateAndLocal {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   color: #343332;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+.ourEventsCard .dateAndLocal p {
+   display: flex;
+   margin: 10px;
+}
+
+.ourEventsCard .dateAndLocal p img {
+   margin-right: 5px;
+}
+
+.ourEventsCard .knowMore {
+   display: flex;
+   position: absolute;
+   bottom: 40px;
+   right: 40px;
+}
+
+.ourEventsCard .knowMore img {
+   margin-left: 10px;
+}
+
+.ourEventsCard .description {
+   margin-left: 10px;
+}
+
+.ourEventsCard .description p {
+   margin-top: 8px;
+   font-weight: 401;
+   line-height: 23px;
+}
+
+.ourEventsCard img {
+   max-width: 100%;
+}
+
+.ourEventsCard a {
+   text-decoration: none;
+   color: #343332;
+   font-size: 22px;
+   font-weight: 500;
+}
+/* Defines style to a desktop screen */
+
+@media (min-width: 1024px) and (max-width: 1249px) {
+   .ourEventsCard h3 {
+       font-size: 20px;
+       margin-bottom: 0px;
+   }
+   .ourEventsCard .dateAndLocal p {
+       font-size: 0.8rem;
+       margin-bottom: 0px;
+       margin-top: 0px;
+   }
+   .ourEventsCard .dateAndLocal p img {
+       height: 20px;
+   }
+   p.description {
+       font-size: 0.6rem;
+       line-height: normal;
+   }
+   .ourEventsCard .knowMore {
+       bottom: 30px;
+       right: 30px;
+   }
+   .ourEventsCard .knowMore a {
+       font-size: 15px;
+   }
+   .ourEventsCard .knowMore img {
+       margin-left: 3px;
+       padding-top: 3px;
+   }
+}
+
+@media (min-width: 1250px) and (max-width: 1800px) {
+   .ourEventsCard .dateAndLocal {
+       margin-bottom: 0px;
+       font-size: 0.7rem;
+   }
+   .ourEventsCard .dateAndLocal img {
+       margin-top: -5px;
+   }
+   .ourEventsCard .dateAndLocal p {
+       margin-bottom: 0px;
+   }
+   .ourEventsCard {
+       font-size: 0.7rem;
+       line-height: normal;
+   }
+   .ourEventsCard a {
+       font-size: 1rem;
+   }
+}
+
+@media (min-width: 1800px) {
+   .ourEventsCard {
+       font-size: 19px;
+   }
+}
+
+@media (max-width: 1023px) {
+   .ourEventsCard .dateAndLocal {
+       margin-bottom: 0px;
+       font-size: 0.7rem;
+   }
+   .ourEventsCard .dateAndLocal p {
+       margin-bottom: 0px;
+   }
+   .ourEventsCard {
+       height: 513px !important;
+       font-size: 15px;
+       line-height: 18px;
+       margin: 10px;
+   }
+}
+
+@media (min-width: 580px) and (max-width: 1024px) {
+   .ourEventsCard {
+       height: 700px !important;
+   }
+}
+
+@media (min-width: 1921px) {
+   .ourEventsCard {
+       height: 613px!important;
+   }
+}
