@@ -1,4 +1,12 @@
 @media (min-width:1921px) {
+  .alignment {
+    height: 80px;
+  }
+
+  #BurguerBubble{
+    visibility: collapse;
+  }
+
   .socialMenu {
     visibility: collapse;
     width: 0;
@@ -40,6 +48,17 @@
     margin-left: 32px;
   }
 
+  .sectionsMenu a:hover {
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #292929;
+    margin-left: 32px;
+  }
+
   .menu ul {
     list-style-type: none;
   }
@@ -50,6 +69,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
   }
 
   .menu .container .sectionsMenu {
@@ -65,6 +85,14 @@
 
 
 @media (min-width:1025px) and (max-width: 1920px) {
+  .alignment {
+    height: 4.17vw;
+  }
+
+  #BurguerBubble{
+    visibility: collapse;
+  }
+
   .socialMenu {
     visibility: collapse;
     width: 0;
@@ -106,6 +134,17 @@
     margin-left: 1.7vw;
   }
 
+  .sectionsMenu a:hover {
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 1.1vw;
+    color: #292929;
+    margin-left: 1.7vw;
+  }
+
   .menu ul {
     list-style-type: none;
   }
@@ -129,93 +168,138 @@
   }
 }
 
-@media (max-width:1025px) {
-  .socialMenu {
-    visibility: collapse;
-    width: 0;
-    height: 0;
+@media (max-width:1024px) {
+  .alignment {
+    height: 17vw;
   }
+
+  /* Closed Menu */
   
   .menu {
     display: flex;
     width: 100vw;
-    background-color: #FCFCFC;
-    box-shadow: 0px 4px 4px rgba(52, 51, 50, 0.3);
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(52, 51, 50, 0.25);
     height: 17vw;
-    position: fixed;
     z-index: 10;
-    left: 0;
+    position: absolute;
     justify-content: center;
     top: 0;
-    align-items: center;
+
   }
 
-  .sectionsMenu {
+  .menu .container {
+    width: calc(100vw - 32px);
+    height: 17vw;
+    height: 100%;
+    position: relative;
+    position: absolute;
+  }
+
+  #CitiLogo {
+    height: 8.2vw;
+    position: absolute;
+    left: -9vw;
+    top: 3vw;
+  }
+
+  #burguerClosed {
+    width: 12vw;
+    position: absolute;
+    top: 1.5vw;
+    right: 0;
+    height: 12vw;
+  }
+
+  .socialMenu,
+  .sectionsMenu,
+  #burguerOpen,
+  #BurguerBubble{
     visibility: collapse;
   }
 
-  .sectionsMenu a {
-    text-decoration: none;
-    font-family: 'Barlow', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1vw;
-    line-height: 1.1vw;
-    color: #292929;
-    margin-left: 1.7vw;
-  }
-
+  /* Hamburguer Open */
   .menu ul {
     list-style-type: none;
   }
 
-  .menu .container {
-    justify-self: center;
+  .sectionsMenu a {
+    text-decoration: none;
+  }
+
+  .menu.change .socialMenu{
+    visibility: initial;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: calc(100vw - 32px);
-    justify-content: space-between;
+    position: absolute;
+    right: 16vw;
   }
 
-  #CITiLogo {
-    width: auto;
-    height: 6.6vw;
+  #LinkdInIcon,
+  #FacebookIcon,
+  #InstagramIcon {
+    width: 6.4vw;
+    height: 6.4vw;
+    margin-left: 16px;
+  }
+  .menu.change .sectionsMenu{
+    visibility: initial;
   }
 
-  /* When Menu is Toggled */
-  .menu.change {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
-
-  .menu.change .socialMenu {
+  .menu.change #burguerOpen{
     visibility: visible;
-    position: relative;
+    width: 12vw;
+    position: absolute;
+    top: 1.5vw;
+    right: 0;
+    height: 12vw;
+  }
+
+  .menu.change #burguerClosed{
+    width: 0px;
+  }
+
+  .menu.change {
+    height: 101vh;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
+  }
+  .menu.change #CitiLogo {
+    visibility: hidden;
+  }
+
+  .sectionsMenu a{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 501;
+    font-size: 4.8vw;
+    line-height: 5.2vw;
+    text-align: right;
+    color: #292929;
+    flex-wrap: nowrap;
+    z-index: 20;
+  }
+
+  .menu.change .container{
+    display: flex;
+    justify-content: center;
   }
 
   .menu.change .sectionsMenu {
-    visibility: visible;
-  }
-
-  .menu.change .container {
     display: flex;
+    align-self: center;
+    align-content: flex-end;
     flex-direction: column;
+    position: absolute;
+    right:16px;
   }
 
-  .menu.change {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
+  .menu.change grguerBubble {
+    position: absolute;
     left: 0;
-  }
-
-  .menu.change #CITiLogo{
-    visibility: collapse;
+    bottom: 0;
+    visibility: initial;
+    width: 100vw;
+    height: auto;
   }
 
 }
