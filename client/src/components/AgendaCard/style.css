@@ -2,6 +2,10 @@
 :root {
    --proportion: calc( 100vw / 1920);
 }
+.agendaImage {
+    border-radius: 4px 4px 0px 0px;
+}
+
 .agendaCard {
    display: flex;
    flex-direction: column;
@@ -71,8 +75,8 @@
    line-height: 23px;
 }
 
-.agendaCard img {
-   max-width: 100%;
+.agendaImage {
+    width: 100%;
 }
 
 .agendaCard a {
@@ -84,6 +88,7 @@
 /* Defines style to a desktop screen */
 
 @media (min-width: 1024px) and (max-width: 1249px) {
+
     .agendaCard .subscriptionDeadline{
         font-family: 'Barlow', sans-serif;
         font-style: normal;
@@ -122,6 +127,11 @@
        margin-left: 3px;
        padding-top: 3px;
    }
+
+   .agendaImage {
+    height: 15.6vw;
+}
+
 }
 
 @media (min-width: 1250px) and (max-width: 1800px) {
@@ -142,6 +152,9 @@
    .agendaCard a {
        font-size: 1rem;
    }
+   .agendaImage {
+    height: 15.6vw;
+}
 }
 
 @media (min-width: 1800px) {
@@ -165,6 +178,11 @@
        line-height: 18px;
        margin: 10px;
    }
+
+   .agendaImage {
+    width: 100%;
+    height: 53vw;
+}
 }
 
 @media (min-width: 580px) and (max-width: 1024px) {
@@ -179,4 +197,9 @@
        height: 613px!important;
        border-radius: 4px;
    }
+
+   .agendaImage {
+    width: 100%;
+    height: 300px;
+}
 }

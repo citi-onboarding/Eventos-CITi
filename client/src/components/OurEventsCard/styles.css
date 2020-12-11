@@ -2,7 +2,10 @@
      :root {
         --proportion: calc( 100vw / 1920);
     }
-    
+    .eventsImage {
+        border-radius: 4px 4px 0px 0px;
+    }
+
     .ourEventsCard {
         display: flex;
         flex-direction: column;
@@ -101,6 +104,9 @@
             margin-left: 3px;
             padding-top: 3px;
         }
+        .eventsImage {
+            height: 15.6vw;
+        }
     }
     
     @media (min-width: 1250px) and (max-width: 1800px) {
@@ -122,12 +128,18 @@
         .ourEventsCard a {
             font-size: 1rem;
         }
+        .eventsImage {
+            height: 15.6vw;
+        }
     }
     
     @media (min-width: 1800px) {
         .ourEventsCard {
             font-size: 19px;
             border-radius: 4px;
+        }
+        .eventsImage {
+            height: 300px;
         }
     }
     
@@ -145,6 +157,9 @@
             line-height: 18px;
             margin: 10px;
             border-radius: 4px;
+        }
+        .eventsImage {
+            height: 53vw;
         }
     }
     
