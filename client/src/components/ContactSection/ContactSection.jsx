@@ -60,7 +60,7 @@ function ContactSection(props) {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
-                <input className="submit-button" type="submit" value="Confirmar inscrição" />
+                <input type="submit" value="Confirmar inscrição" />
             </form>
 
             <div className="social-network-contact">
