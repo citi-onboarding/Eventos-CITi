@@ -16,6 +16,8 @@
         font-size: 19px;
         line-height: 22px;
         border-radius: 4px;
+        position: relative;
+        background-color: #FCFCFC;
     }
     
     .ourEventsCard h3 {
@@ -107,6 +109,9 @@
         .eventsImage {
             height: 15.6vw;
         }
+        .ourEventsCard {
+            margin-bottom: 4vw;
+        }
     }
     
     @media (min-width: 1250px) and (max-width: 1800px) {
@@ -131,12 +136,17 @@
         .eventsImage {
             height: 15.6vw;
         }
+
+        .ourEventsCard {
+            margin-bottom: 4vw;
+        }
     }
     
     @media (min-width: 1800px) {
         .ourEventsCard {
             font-size: 19px;
             border-radius: 4px;
+            margin-bottom: 60px;
         }
         .eventsImage {
             height: 300px;
@@ -161,6 +171,14 @@
         .eventsImage {
             height: 53vw;
         }
+
+        #BubbleFour {
+            position: absolute;
+            z-index: -1;
+            top: 43%;
+            right: 5%;
+        }
+
     }
     
     @media (min-width: 580px) and (max-width: 1024px) {

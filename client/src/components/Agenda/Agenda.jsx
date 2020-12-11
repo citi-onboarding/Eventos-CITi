@@ -4,6 +4,7 @@ import AgendaCard from "../AgendaCard/AgendaCard.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './style.css';
+import {ReactComponent as BubbleFour} from './BubbleFour.svg'
 
 export default function Agenda(props) {
     
@@ -21,6 +22,7 @@ export default function Agenda(props) {
   return (
     <section className="agenda" id="agenda">
       <div className="content">
+      <BubbleFour id="BubbleFour"/>
         <h2>Agenda</h2>
         <Slider {...settings}>
           {props.newEvents.map((item) => {

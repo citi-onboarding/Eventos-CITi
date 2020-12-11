@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import OurEventsCard from "../OurEventsCard/OurEventsCard.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import {ReactComponent as BubbleFive} from './BubbleFive.svg'
 
 import './styles.css';
 
@@ -22,6 +23,7 @@ function OurEvents(props) {
   return (
     <section className="our-events" id="our-events">
       <div className="content">
+        <BubbleFive id="BubbleFive"/>
         <h2> Outros eventos</h2>
         <Slider {...settings}>
           {props.oldEvents.map((item) => {
