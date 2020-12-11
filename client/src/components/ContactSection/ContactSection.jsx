@@ -1,8 +1,6 @@
 import './styles.css';
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import calendar from './images/calendar.svg'
-import gps from './images/gps.svg'
 function ContactSection(props) {
 
 
@@ -12,7 +10,7 @@ function ContactSection(props) {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
-
+    const subject = "Contato";
     //sends email using a http post
     const handleSubmit = async (event) => {
         try {
@@ -31,8 +29,8 @@ function ContactSection(props) {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit} className="modal-form">
+        <section id="contact-section">
+            <form onSubmit={handleSubmit}>
                 <h2>Fale conosco</h2>
                 <div className="form" />
                 <p>Nome</p>
@@ -56,9 +54,8 @@ function ContactSection(props) {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
-                <input
+                <textarea
                     required
-                    type="text"
                     placeholder="Mensagem?"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
@@ -66,7 +63,12 @@ function ContactSection(props) {
                 <input className="submit-button" type="submit" value="Confirmar inscrição" />
             </form>
 
-        </div>
+            <div className="social-network-contact">
+                <p>@citiufpe</p>
+                <p>/company/citiufpe</p>
+                <p>/citiufpe/</p>
+            </div>
+        </section>
     );
 }
 

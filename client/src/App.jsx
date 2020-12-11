@@ -4,6 +4,7 @@ import {
   WhyWeDoIt,
   Footer,
   ModalCreator,
+  ContactSection,
 } from './components';
 
 import './style.css';
@@ -46,6 +47,7 @@ function App() {
     <Footer />
     <WhyWeDoIt />
     <ModalCreator agendaEvents={agendaEvents} />
+    <ContactSection />
     </>
   );
 }

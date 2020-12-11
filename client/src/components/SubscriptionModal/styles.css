@@ -185,6 +185,7 @@
         border-radius: 50px;
         background: #292929;
         left: calc(440 * var(--proportion));
+        cursor: pointer;
     }
     .modal-form input {
         border: none;
