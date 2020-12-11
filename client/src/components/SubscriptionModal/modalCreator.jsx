@@ -12,7 +12,15 @@ function modalCreator(props) {
             {props.agendaEvents.map((item) => {
                 return (
                     <div>
-                        <SubscriptionModal />
+                        <SubscriptionModal 
+                            secureUrl = {item.images[0].secure_url}
+                            name={item.name}
+                            eventDate={item.eventDate}
+                            subscriptionDeadline={item.subscriptionDeadline}
+                            local={item.local}
+                            subscriptionDescription={item.subscriptionDescription}
+                            knowMoreLink={item.knowMoreLink}
+                        />
                     </div>
                 );
             })}
