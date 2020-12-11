@@ -61,6 +61,8 @@
     .agenda .content h2 {
         margin-left: 22px;
         font-size: 28px;
+        margin-top: 72px;
+        margin-bottom: 72px;
     }
     .slick-slider {
         max-height: 550px;
