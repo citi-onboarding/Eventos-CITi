@@ -30,12 +30,12 @@ export default function Menu() {
         </ul>
         </div>
         <ul className="sectionsMenu">
-          <li><a href="#Banner">Início</a></li>
-          <li><a href="#sectionWhyWeDoIt">Por que fazemos?</a></li>
-          <li><a href="">Agenda</a></li>
-          <li><a href="">Outros Eventos</a></li>
-          <li><a href="#GetToKnowOurBlog">Conheça nosso blog</a></li>
-          <li><a href="#Contact">Contato</a></li>
+          <li><a href="#Banner" onClick={handleClick}>Início</a></li>
+          <li><a href="#sectionWhyWeDoIt" onClick={handleClick}>Por que fazemos?</a></li>
+          <li><a href="" onClick={handleClick}>Agenda</a></li>
+          <li><a href="" onClick={handleClick}>Outros Eventos</a></li>
+          <li><a href="#GetToKnowOurBlog" onClick={handleClick}>Conheça nosso blog</a></li>
+          <li><a href="#Contact" onClick={handleClick}>Contato</a></li>
         </ul>
 
       </div>
