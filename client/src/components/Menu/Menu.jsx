@@ -44,8 +44,8 @@ export default function Menu() {
           <li><a href="#GetToKnowOurBlog" onClick={handleClick}>Conheça nosso blog</a></li>
           <li><a href="#Contact" onClick={handleClick}>Contato</a></li>
         </ul>
-      </div>
         <BubbleBurguer id="BurguerBubble"/>
+      </div>
     </nav>
     </div> 
   );

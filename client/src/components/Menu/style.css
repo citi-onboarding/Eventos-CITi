@@ -213,10 +213,11 @@
 
   .socialMenu,
   .sectionsMenu,
-  #burguerOpen,
-  #BurguerBubble{
+  #burguerOpen{
     visibility: collapse;
   }
+
+ 
 
   /* Hamburguer Open */
   .menu ul {
@@ -232,6 +233,10 @@
     display: flex;
     position: absolute;
     right: 16vw;
+  }
+
+  #BurguerBubble {
+    width: 0;
   }
 
   #LinkdInIcon,
@@ -259,9 +264,11 @@
   }
 
   .menu.change {
-    height: 101vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
+    position: fixed;
+    left: 0;
   }
   .menu.change #CitiLogo {
     visibility: hidden;
@@ -273,33 +280,45 @@
     font-weight: 501;
     font-size: 4.8vw;
     line-height: 5.2vw;
-    text-align: right;
+    text-align: left;
     color: #292929;
     flex-wrap: nowrap;
     z-index: 20;
+    right: 0;
+    margin-bottom: 3vw;
+    float: right;
+  }
+  
+  .menu.change .sectionsMenu {
+    top: 36vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right:16px;
+    margin-bottom: 3vw;
+    height: 75vw;
+    justify-content: space-between;
   }
 
   .menu.change .container{
     display: flex;
     justify-content: center;
+    position: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
-  .menu.change .sectionsMenu {
-    display: flex;
-    align-self: center;
-    align-content: flex-end;
-    flex-direction: column;
-    position: absolute;
-    right:16px;
-  }
 
-  .menu.change grguerBubble {
-    position: absolute;
+  .menu.change #BurguerBubble {
+    width: 100%;
     left: 0;
     bottom: 0;
-    visibility: initial;
-    width: 100vw;
-    height: auto;
+    align-self: flex-end;
+    justify-self: flex-end;
+  
   }
 
 }
