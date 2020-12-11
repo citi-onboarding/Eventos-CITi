@@ -73,13 +73,16 @@ module.exports = (app) => {
 
     app.post('/api/subscription', async(req, res) => {
         try {
-            const { name, email, subject, message } = req.body;
-
+            const { name, email, phone, placeOfWorkOrStudy, workRoleOrStudyArea, howYouMetUs, subject } = req.body;
+            console.log(req.body)
             const body = `
-        Nome: ${name}
-        Email: ${email}
-        Mensagem: ${message}
-      `;
+            Nome: ${name}
+            Email: ${email}
+            Telefone: ${phone}
+            Onde trabalha ou estuda: ${placeOfWorkOrStudy}
+            Area de trabalho ou estudo: ${workRoleOrStudyArea}
+            Como nos conheceu: ${howYouMetUs}
+             `;
             await mailServer({
                 destinationUser: process.env.CLIENT_EMAIL,
                 subjectText: subject,

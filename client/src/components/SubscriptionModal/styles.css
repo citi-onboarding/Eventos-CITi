@@ -1,0 +1,24 @@
+.modal .hidden {
+    display: none;
+}
+
+.modal .show {
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(51, 51, 51, 0.5);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .show .modal-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 693px;
+    height: 895px;
+    background-color: white;
+}
