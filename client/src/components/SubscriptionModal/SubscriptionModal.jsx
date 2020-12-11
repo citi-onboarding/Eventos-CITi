@@ -110,7 +110,7 @@ function SubscriptionModal(props) {
     const [subject, setSubject] = useState('')
     //creates string to be the  subject on email
     useEffect(() => {
-        setSubject("Inscrição de " + name + " no projeto");
+        setSubject("Inscrição de " + name + " no projeto " + props.name);
     }, [name, setName]);
     //sends email using a http post
     const handleSubmit = async (event) => {
