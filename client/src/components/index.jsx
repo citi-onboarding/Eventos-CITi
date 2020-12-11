@@ -1,6 +1,6 @@
 import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
-import PostList from './PostList';
-import BlogCard from './BlogCard/BlogCard'
-import BlogWrap from './BlogWrap/BlogWrap'
+import Footer from './Footer/Footer.jsx';
+import OurEvents from './OurEvents/OurEvents.jsx'
+import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt.jsx';
 
 export {GetToKnowOurBlog, PostList, BlogCard, BlogWrap};
