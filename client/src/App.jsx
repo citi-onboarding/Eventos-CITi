@@ -1,12 +1,13 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import {
   GetToKnowOurBlog,
   WhyWeDoIt,
   Footer,
+  ModalCreator,
   OurEvents,
 } from './components';
 import React from 'react';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
 import './style.css';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
     <>
     <Footer />
     <WhyWeDoIt />
+    <ModalCreator agendaEvents={agendaEvents} />
     <OurEvents events={ourEvents}/>
     <GetToKnowOurBlog/>
     </>
