@@ -179,7 +179,6 @@
   
   .menu {
     display: flex;
-    width: 100vw;
     background: #FCFCFC;
     box-shadow: 0px 4px 4px rgba(52, 51, 50, 0.25);
     height: 17vw;
@@ -187,7 +186,10 @@
     position: absolute;
     justify-content: center;
     top: 0;
-
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
   }
 
   .menu .container {
@@ -195,14 +197,12 @@
     height: 17vw;
     height: 100%;
     position: relative;
-    position: absolute;
+    align-self: center;
   }
 
   #CitiLogo {
     height: 8.2vw;
-    position: absolute;
-    left: -9vw;
-    top: 3vw;
+    margin-top: 3vw;
   }
 
   #burguerClosed {
@@ -228,6 +228,7 @@
 
   .sectionsMenu a {
     text-decoration: none;
+    margin-right: 16px;
   }
 
   .menu.change .socialMenu{
@@ -235,6 +236,7 @@
     display: flex;
     position: absolute;
     right: 16vw;
+    top: 0.5vw;
   }
 
   #BurguerBubble {
@@ -246,10 +248,11 @@
   #InstagramIcon {
     width: 6.4vw;
     height: 6.4vw;
-    margin-left: 16px;
+    margin-left: 5vw;
   }
   .menu.change .sectionsMenu{
     visibility: initial;
+    z-index: 40;
   }
 
   .menu.change #burguerOpen{
@@ -264,16 +267,26 @@
   .menu.change #burguerClosed{
     width: 0px;
   }
-
+  
   .menu.change {
     height: 100%;
-    width: 100%;
     display: flex;
     position: fixed;
     left: 0;
+    align-content: center;
   }
   .menu.change #CitiLogo {
     visibility: hidden;
+  }
+  
+  .menu.change .container{
+    width: calc(100vw - 32px);
+    height: 17vw;
+    height: 100%;
+    position: relative;
+    align-self: center;
+    margin: 0;
+    padding: 0;
   }
 
   .sectionsMenu a{
@@ -289,6 +302,8 @@
     right: 0;
     margin-bottom: 3vw;
     float: right;
+    display: flex;
+    flex-direction: row;
   }
   
   .menu.change .sectionsMenu {
@@ -302,25 +317,24 @@
     justify-content: space-between;
   }
 
-  .menu.change .container{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-  }
 
 
   .menu.change #BurguerBubble {
     width: 100%;
     left: 0;
     bottom: 0;
-    align-self: flex-end;
-    justify-self: flex-end;
-  
+    position: absolute;
+    height: auto;
+  }
+
+  .menu.change .line {
+    width: 2.7vw;
+    height: 0;
+    border: 0.5vw solid #292929;
+    border-radius: 0.5vw;
+    align-self: center;
+    background-color: #292929;
+    margin-right: 2vw;
   }
 
 }
