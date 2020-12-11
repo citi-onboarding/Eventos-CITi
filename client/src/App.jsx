@@ -1,4 +1,5 @@
 import {
+  GetToKnowOurBlog,
   WhyWeDoIt,
   Footer,
   OurEvents,
@@ -45,6 +46,7 @@ function App() {
     <Footer />
     <WhyWeDoIt />
     <OurEvents events={ourEvents}/>
+    <GetToKnowOurBlog/>
     </>
   );
 }
