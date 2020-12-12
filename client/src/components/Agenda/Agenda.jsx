@@ -1,13 +1,12 @@
 import React from 'react';
 import Slider from "react-slick";
-import OurEventsCard from "../OurEventsCard/OurEventsCard.jsx"
+import AgendaCard from "../AgendaCard/AgendaCard.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import {ReactComponent as BubbleFive} from './BubbleFive.svg'
+import './style.css';
+import {ReactComponent as BubbleFour} from './BubbleFour.svg'
 
-import './styles.css';
-
-function OurEvents(props) {
+export default function Agenda(props) {
     
     const settings = {
         dots: true,
@@ -21,20 +20,23 @@ function OurEvents(props) {
       };
 
   return (
-    <section className="our-events" id="our-events">
+    <section className="agenda" id="agenda">
       <div className="content">
-        <BubbleFive id="BubbleFive"/>
-        <h2> Outros eventos</h2>
+      <BubbleFour id="BubbleFour"/>
+        <h2>Agenda</h2>
         <Slider {...settings}>
-          {props.oldEvents.map((item) => {
+          {props.newEvents.map((item) => {
             return(
-              <OurEventsCard 
+              <AgendaCard 
+                _id={item._id}
+                subscriptionDeadline={item.subscriptionDeadline}
                 secureUrl = {item.images[0].secure_url}
                 name={item.name}
                 eventDate={item.eventDate}
                 local={item.local}
                 description={item.description}
                 knowMoreLink={item.knowMoreLink}
+                modal={props.modal}
               />
             );
           })}
@@ -43,5 +45,3 @@ function OurEvents(props) {
       </section>
   );
 }
-
-export default OurEvents;

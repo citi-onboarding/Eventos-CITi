@@ -55,10 +55,8 @@ function SubscriptionModal(props) {
         return;
     });
     var subscriptionDeadlineString = ""
-    console.log(props.subscriptionDeadline)
     var subDate = new Date(props.subscriptionDeadline)
     var month = monthString(subDate)
-    console.log("mes " + subDate.getMonth())
     subscriptionDeadlineString = "Inscrições até "+ subDate.getDay() + " de " + month + " de " + subDate.getFullYear();
     
     var dateString = ""
@@ -72,6 +70,7 @@ function SubscriptionModal(props) {
     useEffect(() => {
         // add when mounted
         document.addEventListener("mousedown", handleClick);
+        console.log("clicou")
         // return function to be called when unmounted
         return () => {
             document.removeEventListener("mousedown", handleClick);
@@ -81,12 +80,13 @@ function SubscriptionModal(props) {
     const handleClick = e => {
         e.stopPropagation();
         if (node.current.contains(e.target)) {
-
             console.log("clicou dentro")
             return;
         }
+        console.log("clicou fora")
         // outside click 
-        hideDropdown();
+        props.setModal("")
+        props.setRender(false)
     };
 
     //code to show or hide modal
@@ -135,7 +135,7 @@ function SubscriptionModal(props) {
         <div>
             <button onClick={showDropdown}>{props.name}</button>
             <div className="modal">
-                <div className={dropdown} >
+                <div className="show" >
                     <div className="modal-content" ref={node}>
                         <div className="modal-header">
                             <img alt="imagem do evento" src={props.secureUrl} className="event-image"/>

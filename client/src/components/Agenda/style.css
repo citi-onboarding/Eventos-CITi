@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
-.our-events {
+.agenda {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -7,19 +7,19 @@
 }
 
 @media(min-width:1024px){
-    #BubbleFive {
-        position: absolute;
-        z-index: -1;
-        top: 40%;
-        left: 85%;
-    }
+#BubbleFour {
+    position: absolute;
+    z-index: -1;
+    right:95%;
+    top: 20%
+}
 }
 .slick-dots li button:before {
     width: 5px;
     height: 5px;
 }
 
-.our-events h2 {
+.agenda h2 {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -41,14 +41,15 @@
     width: 30vw;
 }
 
-.our-events .content {
+.agenda .content {
     width: 62.5vw;
     position: relative;
 }
 
 @media (min-width: 1921px) {
-    .our-events .content {
+    .agenda .content {
         width: 1200px;
+        position: relative;
     }
     .slick-slide {
         width: 564px;
@@ -57,7 +58,7 @@
 }
 
 @media (max-width: 1024px) {
-    .our-events .content h2 {
+    .agenda .content h2 {
         margin-left: 22px;
         font-size: 28px;
         margin-top: 72px;
@@ -69,18 +70,12 @@
     .slick-list {
         max-height: 550px;
     }
-    .our-events .content {
+    .agenda .content {
         width: 100vw;
+        position: relative;
     }
     .slick-slide {
         width: 80vw;
-    }
-
-    #BubbleFive {
-        position: absolute;
-        z-index: -1;
-        top: 23%;
-        left: 40%;
     }
 }
 

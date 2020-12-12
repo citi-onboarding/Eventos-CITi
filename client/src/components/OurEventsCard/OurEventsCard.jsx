@@ -49,8 +49,8 @@ function OurEventsCard(props) {
     date = "Última edição em " + eventDate.getDay() + " de " + month + " de " + eventDate.getFullYear()
 
     return (
-        <div className="ourEventsCard">
-            <img src={props.secureUrl}></img>
+        <article className="ourEventsCard">
+            <img src={props.secureUrl} className="eventsImage"></img>
             <h3>{props.name}</h3>
             <div className="dateAndLocal">
                 
@@ -65,7 +65,7 @@ function OurEventsCard(props) {
                 <a href={props.knowMoreLink} target="_blank" >Saiba mais</a>
                 <img src={arrow} alt="flecha apontando para o link" />
             </div>
-        </div>
+        </article>
     );
 }
 
