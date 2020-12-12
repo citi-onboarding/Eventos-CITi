@@ -92,7 +92,7 @@
         font-size: 19px !important;
         margin-top: 16px !important;
     }
-    input[type=submit] {
+    .modal-form input[type=submit] {
         font-size: 19px !important;
         width: 231px !important;
         height: 36px !important;
@@ -182,7 +182,7 @@
         font-weight: 400;
         margin-top: 16px;
     }
-    input[type=submit] {
+    .modal-form input[type=submit] {
         position: relative;
         border-bottom: none !important;
         font-size: calc(19 * var(--proportion));
@@ -282,7 +282,7 @@
         font-size: calc(12 * var(--proportion-mobile));
         font-weight: 400;
     }
-    input[type=submit] {
+    .modal-form input[type=submit] {
         position: relative;
         border-bottom: none !important;
         font-size: calc(15 * var(--proportion-mobile))!important;
@@ -381,7 +381,7 @@
         font-size: 12px;
         font-weight: 400;
     }
-    input[type=submit] {
+    .modal-form input[type=submit] {
         position: relative;
         border-bottom: none !important;
         font-size: 15px!important;

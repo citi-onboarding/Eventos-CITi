@@ -5,6 +5,7 @@ import {
   WhyWeDoIt,
   Footer,
   ModalCreator,
+  ContactSection,
   OurEvents,
 } from './components';
 import React from 'react';
@@ -47,6 +48,7 @@ function App() {
     <Footer />
     <WhyWeDoIt />
     <ModalCreator agendaEvents={agendaEvents} />
+    <ContactSection />
     <OurEvents events={ourEvents}/>
     <GetToKnowOurBlog/>
     </>
