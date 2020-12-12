@@ -2,9 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import './styles.css'
-import {ReactComponent as BannerImage} from './images/banner.svg';
-import {ReactComponent as BubbleLeft} from './images/left-bubble.svg';
-import {ReactComponent as BubbleRight} from './images/right-bubble.svg';
+import { ReactComponent as BannerImage } from './images/banner.svg';
+import { ReactComponent as BubbleLeft } from './images/left-bubble.svg';
+import { ReactComponent as BubbleRight } from './images/right-bubble.svg';
 
 export default function Banner() {
     const [banner, setBanner] = useState();
@@ -19,14 +19,13 @@ export default function Banner() {
         loadBanner();
     }, []);
 
-console.log(banner);
+    console.log(banner);
 
-    return(
+    return (
         <header className="Banner">
+            <BubbleRight className="BubbleRight" />
 
-            <BubbleRight className="BubbleRight"/>
-
-            <BubbleLeft className="BubbleLeft"/>
+            <BubbleLeft className="BubbleLeft" />
 
             <div className="container">
                 <div className="content">
@@ -41,9 +40,7 @@ console.log(banner);
 
                 <BannerImage className="BackgroundImage" />
 
-            </div>    
-
-
+            </div>
         </header>
     )
 }
