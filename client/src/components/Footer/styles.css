@@ -4,6 +4,7 @@ footer .contatoFooter .phone {
 }
 
 footer {
+    z-index: 1;
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     z-index: 1;

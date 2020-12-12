@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Bigger Web */
+ @media (min-width: 1920px) { 
+  .blogCard {
+    background-color: #FCFCFC;
+    box-shadow: 0px 9.31395px 9.31395px rgba(52, 51, 50, 0.3);
+    border-radius: 4px;
+    width: 801px;
+    height: 240px;
+    display: flex;
+  }
+  
+  .blogCard .content {
+    display: flex;
+    width: 561px;
+    flex-direction: column;
+    margin-left: 16px;
+    justify-content: space-between;
+  }
+  
+  .blogCard .BlogCardImage{
+    display: flex;
+    width: 240px;
+    height: 240px;
+  }
+  
+  .blogCard .Date {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: 292929, 70%;
+    margin-top: 24px;
+    padding: 0;
+  }
+  
+  .blogCard h4{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 0px;
+    color: #292929;
+    margin-top: 10px;
+  }
+  
+  .blogCard a {
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #292929;
+    padding: 0;
+    margin-left: 270px;
+    margin-bottom: 24px;
+  }
+
+  .blogCard .description {
+    display: flex;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ReadMoreMobile {
+    visibility: collapse;
+  }
+  
+}
+
+
+/* Responsive Web */
+@media (min-width: 1025px) and (max-width: 1919px) { 
+  .blogCard {
+    background-color: #FCFCFC;
+    box-shadow: 0px 9.31395px 9.31395px rgba(52, 51, 50, 0.3);
+    border-radius: 4px;
+    width: 41.7vw;
+    height: 12.5vw;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .blogCard .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.9vw;
+    width: 27.4vw;
+    margin-right: 0.9vw;
+    height: 12vw;
+    margin-top: 0.5vw;
+    position: relative;
+  }
+  
+  .blogCard .BlogCardImage{
+    display: flex;
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+  
+  .blogCard .Date {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: 292929, 70%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .blogCard h4{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 0px;
+    color: #292929;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  
+  .blogCard a {
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #292929;
+    padding: 0;
+    position: absolute;
+    bottom: 0.8vw;
+    right: 0.8vw;
+   
+  }
+
+  .blogCard .description {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ReadMoreMobile {
+    visibility: collapse;
+  }
+}
+
+/* Modern Mobile */
+@media (min-width: 351px) and (max-width: 1024px){ 
+  .blogCard {
+    position: relative;
+    background-color: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(52, 51, 50, 0.3);
+    border-radius: 4px;
+    width: 91.7vw;
+    height: 32vw;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .blogCard .content {
+    display: flex;
+    flex-direction: column;
+    margin: 2.7vw;
+    width: 57vw;
+    height: 28vw;
+    position: relative;
+  }
+  
+  .blogCard .BlogCardImage{
+    display: flex;
+    width: 32vw;
+    height: 32vw;
+  }
+  
+  .blogCard .Date {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(41, 41, 41, 0.7);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .blogCard h4{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #292929;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .blogCard a {
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;    
+    color: #292929;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .blogCard .description {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+  }
+
+  .ReadMoreWeb {
+    visibility: collapse;
+  }
+
+  #blogVector {
+    width: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+/* Retro Mobile */
+@media (max-width: 350px){ 
+  .blogCard {
+    position: relative;
+    background-color: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(52, 51, 50, 0.3);
+    border-radius: 4px;
+    width: 91.7vw;
+    height: 32vw;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .blogCard .content {
+    display: flex;
+    flex-direction: column;
+    margin: 2.7vw;
+    width: 57vw;
+    height: 28vw;
+    position: relative;
+  }
+  
+  .blogCard .BlogCardImage{
+    display: flex;
+    width: 32vw;
+    height: 32vw;
+  }
+  
+  .blogCard .Date {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(41, 41, 41, 0.7);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .blogCard h4{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #292929;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .blogCard a {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;    
+    color: #292929;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .blogCard .description {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 0;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+  }
+
+  .ReadMoreWeb {
+    visibility: collapse;
+  }
+
+  #blogVector {
+    width: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+

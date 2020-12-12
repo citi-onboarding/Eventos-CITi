@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
+  GetToKnowOurBlog,
   WhyWeDoIt,
   Footer,
   ModalCreator,
   ContactSection,
+  OurEvents,
 } from './components';
-
+import React from 'react';
 import './style.css';
 
 function App() {
-
-
   const [ourEvents, setOurEvents] = useState([]);
   const [agendaEvents, setAgendaEvents] = useState([]);
   const [events, setEvents] = useState();
@@ -42,12 +42,15 @@ function App() {
     setAgendaEvents(agendaAux);
   }, events)
 
+  
   return (
     <>
     <Footer />
     <WhyWeDoIt />
     <ModalCreator agendaEvents={agendaEvents} />
     <ContactSection />
+    <OurEvents events={ourEvents}/>
+    <GetToKnowOurBlog/>
     </>
   );
 }

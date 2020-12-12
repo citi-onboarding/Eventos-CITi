@@ -40,6 +40,14 @@
     font-family: 'Barlow', sans-serif;
 }
 
+.modal input:focus {
+    outline: none;
+}
+
+.modal-form input {
+    background-color: transparent;
+}
+
 @media (min-width: 1921px) {
     .modal .show .modal-content {
         padding: 24px !important;
