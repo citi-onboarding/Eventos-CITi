@@ -4,6 +4,7 @@ import arrow from './images/arrow.svg'
 import calendar from './images/calendar.svg'
 import gps from './images/gps.svg'
 import SubscriptionModal from '../SubscriptionModal/SubscriptionModal'
+import { createPortal } from "react-dom";
 export default function agendaCard(props) {
     var date = ""
     var eventDate = new Date(props.eventDate)
@@ -104,7 +105,7 @@ export default function agendaCard(props) {
                 <p><img src={gps} alt="icone de gps" />{props.local}</p>
             </div>
             <p className="description">{props.description}</p>
-            <SubscriptionModal/>
+            <button class="button-sub" onClick={ (e) => {props.modal(props._id)} }>increva-se</button>
             <div className="knowMore">
                 <a href={props.knowMoreLink} target="_blank" >Saiba mais</a>
                 <img src={arrow} alt="flecha apontando para o link" />

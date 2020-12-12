@@ -28,6 +28,7 @@ export default function Agenda(props) {
           {props.newEvents.map((item) => {
             return(
               <AgendaCard 
+                _id={item._id}
                 subscriptionDeadline={item.subscriptionDeadline}
                 secureUrl = {item.images[0].secure_url}
                 name={item.name}
@@ -35,6 +36,7 @@ export default function Agenda(props) {
                 local={item.local}
                 description={item.description}
                 knowMoreLink={item.knowMoreLink}
+                modal={props.modal}
               />
             );
           })}

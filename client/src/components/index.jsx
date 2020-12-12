@@ -5,6 +5,6 @@ import Footer from './Footer/Footer';
 import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
 import PostList from './PostList';
 import WhyWeDoIt from './WhyWeDoIt/WhyWeDoIt';
+import SubscriptionModal from './SubscriptionModal/SubscriptionModal'
 
-
-export {Footer, GetToKnowOurBlog, Agenda, OurEvents, PostList, WhyWeDoIt, ModalCreator};
+export {Footer, GetToKnowOurBlog, Agenda, OurEvents, PostList, WhyWeDoIt, SubscriptionModal};
