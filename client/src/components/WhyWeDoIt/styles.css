@@ -1,0 +1,197 @@
+/* Estilização web acima de Fulld HD+ */
+@media(min-width: 1920px) {
+  .why-we-do-it {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content:center;
+  }
+
+  .why-we-do-it .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+  }
+
+  .why-we-do-it .content {
+    display: flex;
+    width: 436px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+  }
+  /* Imagem - Web FHD+ */
+  #webImageWhyWeDoIt { 
+    height: 477px;
+
+  }
+
+  #mobileImageWhyWeDoIt {
+    display: none;
+  }
+
+  /* Decrição Web FHD+ */
+  .why-we-do-it p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 401;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 40px;
+  }
+
+  /* Título - Web FHD+ */
+  .why-we-do-it h2 {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 18px;
+    color: 292929, 100%;
+    margin: 0; 
+  }
+
+  /* Bolha - Web FHD+ */
+  .BubbleThree {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: 80%;
+  }
+}
+
+
+/* Estilização Web Menor que FHD*/
+@media(max-width: 1920px) and (min-width: 1025px) {
+  .why-we-do-it {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+  .why-we-do-it .container {
+    display: flex;
+    justify-content: space-between;
+    width: 62.5vw;
+  }
+
+  /* Alinhamento dos textos - Web */
+  .why-we-do-it .content {
+    width: 22.7vw;
+    align-self: flex-start;
+  }
+  
+  /* Imagem - Web */
+  #webImageWhyWeDoIt {
+    display: flex;
+    order: 3;
+    width: 36.15vw;
+    height: 24.18vw;
+
+  }
+
+  #mobileImageWhyWeDoIt {
+    display: none;
+  }
+
+  /* Decrição - Web */
+  .why-we-do-it p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 401;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  /* Título - Web */
+  .why-we-do-it h2 {
+    margin-bottom: 40px;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 18px;
+    color: 292929, 100%;
+    margin: 0;
+  }
+
+  /* Bolha - Web */
+  .BubbleThree {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: 80%;
+  }
+}
+
+
+
+/* Estilização mobile */
+@media(max-width: 1024px) {
+  
+  /* Centralização - Mobile */
+  .why-we-do-it {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  /* Título - Mobile */
+  .why-we-do-it h2{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: #292929;
+    order: 1;
+  }
+
+  /* Imagem - Mobile */
+  #mobileImageWhyWeDoIt {
+    height: 100%;
+    width: 100%;
+    order: 2;
+    margin-top: 32px;;
+  }
+   
+  #webImageWhyWeDoIt {
+    display: none;
+  }
+
+  /* Descrição - Mobile */
+  .why-we-do-it p{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 401;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    order: 3;
+    margin-top: 32px;
+  }
+
+  /* Bolha - Mobile */
+  .BubbleThree {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 40%;
+    width: 600px;
+    height: auto;
+  }
+
+}
+/* Bolha - Global */
+.why-we-do-it .container {
+  position: relative;
+}

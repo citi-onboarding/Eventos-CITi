@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+.agenda {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media(min-width:1024px){
+#BubbleFour {
+    position: absolute;
+    z-index: -1;
+    right:95%;
+    top: 20%
+}
+}
+.slick-dots li button:before {
+    width: 5px;
+    height: 5px;
+}
+
+.agenda h2 {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 18px;
+}
+
+.slick-slide.slick-active.slick-center.slick-current {
+    transform: scale(1.05);
+}
+
+.slick-dots li button {
+    width: fit-content !important;
+    height: fit-content !important;
+    transform: scale(3);
+}
+
+.slick-slide {
+    width: 30vw;
+}
+
+.agenda .content {
+    width: 62.5vw;
+    position: relative;
+}
+
+@media (min-width: 1921px) {
+    .agenda .content {
+        width: 1200px;
+        position: relative;
+    }
+    .slick-slide {
+        width: 564px;
+        max-height: 800px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .agenda .content h2 {
+        margin-left: 22px;
+        font-size: 28px;
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+    .slick-slider {
+        max-height: 550px;
+    }
+    .slick-list {
+        max-height: 550px;
+    }
+    .agenda .content {
+        width: 100vw;
+        position: relative;
+    }
+    .slick-slide {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 580px) {
+    .slick-slider {
+        max-height: 700px;
+    }
+    .slick-list {
+        max-height: 700px;
+    }
+}
