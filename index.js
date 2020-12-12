@@ -10,6 +10,7 @@ keystone.init({
   'admin path': 'admin',
   'auto update': true,
   port: process.env.PORT || 3001,
+  host: '0.0.0.0',
   mongo: process.env.MONGO_URI,
   auth: true,
   'user model': 'User',
