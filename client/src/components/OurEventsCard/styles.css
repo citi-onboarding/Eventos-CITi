@@ -2,7 +2,10 @@
      :root {
         --proportion: calc( 100vw / 1920);
     }
-    
+    .eventsImage {
+        border-radius: 4px 4px 0px 0px;
+    }
+
     .ourEventsCard {
         display: flex;
         flex-direction: column;
@@ -12,6 +15,9 @@
         box-shadow: 0px 9.31395px 9.31395px rgba(52, 51, 50, 0.3);
         font-size: 19px;
         line-height: 22px;
+        border-radius: 4px;
+        position: relative;
+        background-color: #FCFCFC;
     }
     
     .ourEventsCard h3 {
@@ -100,6 +106,12 @@
             margin-left: 3px;
             padding-top: 3px;
         }
+        .eventsImage {
+            height: 15.6vw;
+        }
+        .ourEventsCard {
+            margin-bottom: 4vw;
+        }
     }
     
     @media (min-width: 1250px) and (max-width: 1800px) {
@@ -116,15 +128,28 @@
         .ourEventsCard {
             font-size: 0.7rem;
             line-height: normal;
+            border-radius: 4px;
         }
         .ourEventsCard a {
             font-size: 1rem;
+        }
+        .eventsImage {
+            height: 15.6vw;
+        }
+
+        .ourEventsCard {
+            margin-bottom: 4vw;
         }
     }
     
     @media (min-width: 1800px) {
         .ourEventsCard {
             font-size: 19px;
+            border-radius: 4px;
+            margin-bottom: 60px;
+        }
+        .eventsImage {
+            height: 300px;
         }
     }
     
@@ -141,17 +166,31 @@
             font-size: 15px;
             line-height: 18px;
             margin: 10px;
+            border-radius: 4px;
         }
+        .eventsImage {
+            height: 53vw;
+        }
+
+        #BubbleFour {
+            position: absolute;
+            z-index: -1;
+            top: 43%;
+            right: 5%;
+        }
+
     }
     
     @media (min-width: 580px) and (max-width: 1024px) {
         .ourEventsCard {
             height: 700px !important;
+            border-radius: 4px;
         }
     }
     
     @media (min-width: 1921px) {
         .ourEventsCard {
             height: 613px!important;
+            border-radius: 4px;
         }
     }

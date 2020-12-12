@@ -40,8 +40,8 @@ export default function Menu() {
         <ul className="sectionsMenu">
           <li><a href="bBanner" onClick={handleClick}>Início</a></li>
           <li><a href="#sectionWhyWeDoIt" onClick={handleClick}>Por que fazemos?</a></li>
-          <li><a href="" onClick={handleClick}>Agenda</a></li>
-          <li><a href="" onClick={handleClick}>Outros Eventos</a></li>
+          <li><a href="#agenda" onClick={handleClick}>Agenda</a></li>
+          <li><a href="#our-events" onClick={handleClick}>Outros Eventos</a></li>
           <li><a href="#GetToKnowOurBlog" onClick={handleClick}> Conheça nosso blog</a></li>
           <li><a href="#Contact" onClick={handleClick}>Contato</a></li>
         </ul>
