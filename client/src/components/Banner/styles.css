@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&display=swap');
+.Banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.Banner .content {
+    width: 500px;
+}
+
+.Banner .container {
+    display: flex;
+    width: 62.5vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Banner h1 {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    color: #292929;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.Banner p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 501;
+    font-size: 22px;
+    line-height: 26px;
+    color: #292929;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#root {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Banner .BubbleLeft {
+    display: flex;
+    bottom: -300px;
+    position: absolute;
+    left: -300px;
+}
+
+.Banner .BubbleRight {
+    position: absolute;
+    right: -1100px;
+    z-index: -1;
+    top: -760px;
+}
+
+@media(max-width: 1024px) {
+    .Banner p {
+        font-size: 15px;
+    }
+    .Banner .BubbleRight {
+        right: -1700px;
+        top: -1060px;
+    }
+    .Banner .BubbleLeft {
+        display: flex;
+        bottom: -100px;
+        position: absolute;
+        left: -520px;
+    }
+    .Banner .BackgroundImage {
+        width: 400px;
+        margin-top: -260px;
+        margin-left: 150px;
+    }
+    .Banner h1 {
+        margin-left: 10%;
+        margin-top: 40%;
+    }
+    .Banner .container {
+        width: 62.5vw;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 760px) and (max-width: 1024px) {
+    .Banner .BackgroundImage {
+        width: 600px;
+        margin-top: -210px;
+    }
+}
+
+@media(min-width: 1921px) {
+    .Banner .container {
+        width: 1200px;
+    }
+}

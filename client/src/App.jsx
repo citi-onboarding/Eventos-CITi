@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
+  Banner,
   GetToKnowOurBlog,
   WhyWeDoIt,
   Footer,
@@ -12,6 +13,8 @@ import {
 } from './components';
 import React from 'react';
 import './style.css';
+
+
 
 function App() {
   const [ourEvents, setOurEvents] = useState([]);
@@ -61,6 +64,7 @@ function App() {
   return (
     <>
       <Menu />
+      <Banner />
       <Footer />
       <WhyWeDoIt />
       <Agenda

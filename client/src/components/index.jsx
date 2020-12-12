@@ -1,3 +1,4 @@
+import Banner from './Banner/Banner'
 import OurEvents from './OurEvents/OurEvents.jsx'
 import Agenda from './Agenda/Agenda.jsx'
 
@@ -10,5 +11,5 @@ import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
 import PostList from './PostList';
 import SubscriptionModal from './SubscriptionModal/SubscriptionModal'
 import Menu from './Menu/Menu.jsx'
-export {Agenda, BlogCard, ContactSection,BlogWrap, SubscriptionModal, Footer, GetToKnowOurBlog, OurEvents, WhyWeDoIt, Menu};
+export {Banner, Agenda, BlogCard, ContactSection,BlogWrap, SubscriptionModal, Footer, GetToKnowOurBlog, OurEvents, WhyWeDoIt, Menu};
 
