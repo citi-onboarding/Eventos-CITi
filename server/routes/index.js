@@ -73,9 +73,11 @@ module.exports = (app) => {
 
     app.post('/api/subscription', async(req, res) => {
         try {
-            const { name, email, phone, placeOfWorkOrStudy, workRoleOrStudyArea, howYouMetUs, subject } = req.body;
+            const { name, email, phone, placeOfWorkOrStudy, workRoleOrStudyArea, howYouMetUs, subject, message } = req.body;
             console.log(req.body)
-            const body = `
+            var body = ``
+            if (placeOfWorkOrStudy !== undefined) {
+                body = `
             Nome: ${name}
             Email: ${email}
             Telefone: ${phone}
@@ -83,6 +85,15 @@ module.exports = (app) => {
             Area de trabalho ou estudo: ${workRoleOrStudyArea}
             Como nos conheceu: ${howYouMetUs}
              `;
+            } else {
+                body = `
+                    Nome: ${name}
+                    Email: ${email}
+                    Telefone: ${phone}
+                    Mensagem: ${message}
+             `;
+            }
+
             await mailServer({
                 destinationUser: process.env.CLIENT_EMAIL,
                 subjectText: subject,

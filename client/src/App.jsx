@@ -5,6 +5,7 @@ import {
   WhyWeDoIt,
   Footer,
   SubscriptionModal,
+  ContactSection,
   OurEvents,
   Agenda,
 } from './components';
@@ -78,6 +79,7 @@ function App() {
         setModal={setModal}
       />
       )}
+      <ContactSection />
     </>
   );
 }
