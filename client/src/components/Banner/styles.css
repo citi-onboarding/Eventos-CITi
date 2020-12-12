@@ -65,6 +65,9 @@
 }
 
 @media(max-width: 1024px) {
+    .Banner p {
+        font-size: 15px;
+    }
     .Banner .BubbleRight {
         right: -1700px;
         top: -1060px;
@@ -76,7 +79,7 @@
         left: -520px;
     }
     .Banner .BackgroundImage {
-        width: 500px;
+        width: 400px;
         margin-top: -260px;
         margin-left: 150px;
     }
@@ -85,7 +88,15 @@
         margin-top: 40%;
     }
     .Banner .container {
+        width: 62.5vw;
         flex-direction: column;
+    }
+}
+
+@media(min-width: 760px) and (max-width: 1024px) {
+    .Banner .BackgroundImage {
+        width: 600px;
+        margin-top: -210px;
     }
 }
 
