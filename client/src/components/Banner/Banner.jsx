@@ -22,7 +22,7 @@ export default function Banner() {
     console.log(banner);
 
     return (
-        <header className="Banner">
+        <header className="Banner" id="banner">
             <BubbleRight className="BubbleRight" />
 
             <BubbleLeft className="BubbleLeft" />
