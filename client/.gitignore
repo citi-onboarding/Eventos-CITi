@@ -25,3 +25,7 @@ yarn-error.log*
 # insync
 
 *.insync*
+
+package-lock.json
+yarn.lock
+.eslintcache

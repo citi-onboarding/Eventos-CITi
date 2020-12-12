@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap');
+footer .contatoFooter .phone {
+    display: flex;
+}
+
+footer {
+    z-index: 1;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .footer.footer-active {
+        margin-bottom: 0;
+    }
+    footer .containerFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        box-shadow: 0px -4px 4px rgba(52, 51, 50, 0.3);
+    }
+    .footer {
+        position: fixed;
+        height: 512px;
+        max-height: 100vh;
+        width: 100vw;
+        font-size: 12px;
+        bottom: 0;
+        margin-bottom: -512px;
+        transition: 0.3s ease;
+        background-color: #FCFCFC;
+        right: 0;
+    }
+    footer .arrow {
+        order: -1;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    footer .logoCitiFooter {
+        order: -1;
+    }
+    footer .addressAndMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .addressAndMessage .address {
+        text-align: center;
+        width: 70%;
+    }
+    footer .addressAndMessage img {
+        height: 15px;
+    }
+    footer .contatoFooter .socialNetworksFooter {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 15px;
+    }
+    footer .contatoFooter .socialNetworksFooter img {
+        margin-right: 16px;
+        height: 24px;
+    }
+    footer .contatoFooter .phone {
+        margin-top: 20px;
+    }
+    footer .contatoFooter .phone img {
+        height: 18px;
+        margin-top: 10px;
+        margin-right: 11px;
+    }
+    footer .line {
+        display: block;
+        width: 60px;
+        height: 0px;
+        border-bottom: 3px solid #292929;
+    }
+    footer .addressAndMessage a {
+        text-decoration: none;
+        color: #292929;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer .addressAndMessage .message p {
+        display: flex;
+        width: fit-content;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1025px) {
+    footer.footer-active {
+        margin-bottom: 0;
+    }
+    footer .containerFooter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 62.5vw;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        background-color: #FCFCFC;
+        display: flex;
+        height: 360px;
+        font-size: 16px;
+        width: 100vw;
+        margin-bottom: -360px;
+        transition: 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0px -4px 4px rgba(52, 51, 50, 0.3);
+    }
+    .arrow {
+        display: none;
+    }
+    footer .line {
+        display: none;
+    }
+    footer .mobileText {
+        display: none;
+    }
+    footer .logoCitiFooter img {
+        height: 100px;
+    }
+    footer .contatoFooter .socialNetworksFooter img {
+        margin-right: 20px;
+    }
+    footer .contatoFooter .phone img {
+        margin-right: 15px;
+    }
+    footer .addressAndMessage {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+    footer .addressAndMessage p {
+        width: 200px;
+        text-align: right;
+    }
+    footer .addressAndMessage .address {
+        margin-bottom: 32%;
+    }
+    footer .addressAndMessage a {
+        display: none;
+    }
+    footer .addressAndMessage .message {
+        display: flex;
+        justify-content: center;
+    }
+    footer .addressAndMessage .message p {
+        display: flex;
+        width: fit-content;
+    }
+    footer .addressAndMessage .message #logoDoCiti {
+        height: 20px;
+    }
+}
+
+@media (min-width: 1921px) {
+    footer .containerFooter {
+        width: 1200px;
+    }
+}

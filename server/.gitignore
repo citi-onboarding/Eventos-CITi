@@ -5,3 +5,7 @@
 # insync
 
 *.insync*
+
+package-lock.json
+yarn.lock
+.eslintcache
