@@ -52,7 +52,6 @@ function App() {
     <OurEvents
      oldEvents={ourEvents}/>
     <ModalCreator agendaEvents={agendaEvents} />
-    <OurEvents events={ourEvents}/>
     <GetToKnowOurBlog/>
 
     </>
