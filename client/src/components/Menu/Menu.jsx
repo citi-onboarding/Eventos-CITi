@@ -38,11 +38,12 @@ export default function Menu() {
           <BurguerOpen id="burguerOpen" onClick={handleClick}/> 
         </div>
         <ul className="sectionsMenu">
-          <li><a href="#Banner" onClick={handleClick}><div className="line"></div>Início</a></li>
-          <li><a href="#sectionWhyWeDoIt" onClick={handleClick}><div className="line"></div>Por que fazemos?</a></li>
-          <li><a href="" onClick={handleClick}> <div className="line"></div> Eventos</a></li>
-          <li><a href="#GetToKnowOurBlog" onClick={handleClick}> <div className="line"></div> Conheça nosso blog</a></li>
-          <li><a href="#Contact" onClick={handleClick}><div className="line"></div>Contato</a></li>
+          <li><a href="bBanner" onClick={handleClick}>Início</a></li>
+          <li><a href="#sectionWhyWeDoIt" onClick={handleClick}>Por que fazemos?</a></li>
+          <li><a href="" onClick={handleClick}>Agenda</a></li>
+          <li><a href="" onClick={handleClick}>Outros Eventos</a></li>
+          <li><a href="#GetToKnowOurBlog" onClick={handleClick}> Conheça nosso blog</a></li>
+          <li><a href="#Contact" onClick={handleClick}>Contato</a></li>
         </ul>
       </div>
         <BubbleBurguer id="BurguerBubble"/>
