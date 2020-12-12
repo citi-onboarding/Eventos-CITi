@@ -6,7 +6,7 @@ import './styles.css';
 export default function WhyWeDoIt () {
   const [whyWeDoIt, setWhyWeDoIt] = useState();
   const loadWhyWeDoIt = async () => {
-    const res = await axios.get('http://localhost:3001/api/why-we-do-it');
+    const res = await axios.get('https://citi-eventos.herokuapp.com/api/why-we-do-it');
     setWhyWeDoIt(res.data);
   };
 

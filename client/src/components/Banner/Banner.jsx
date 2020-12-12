@@ -10,7 +10,7 @@ export default function Banner() {
     const [banner, setBanner] = useState();
 
     const loadBanner = async () => {
-        const res = await axios.get('http://localhost:3001/api/banner');
+        const res = await axios.get('https://citi-eventos.herokuapp.com/api/banner');
         console.log(res.data[0]?.description);
         setBanner(res.data);
     }

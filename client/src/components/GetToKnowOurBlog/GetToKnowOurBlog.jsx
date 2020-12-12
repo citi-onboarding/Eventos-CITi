@@ -15,7 +15,7 @@ import './style.css' ;
 export default function Blog () {
   const [blogSlicker, setBlogSlicker] = useState();
   const loadBlogSlicker = async () => {
-    const res = await axios.get('http://localhost:3001/api/blogpost'); //Api do Blog
+    const res = await axios.get('https://citi-eventos.herokuapp.com/api/blogpost'); //Api do Blog
     setBlogSlicker(res.data);
   };
 

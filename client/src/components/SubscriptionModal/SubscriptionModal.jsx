@@ -117,7 +117,7 @@ function SubscriptionModal(props) {
         try {
             event.preventDefault();
 
-            await axios.post('http://localhost:3001/api/subscription', {
+            await axios.post('https://citi-eventos.herokuapp.com/api/subscription', {
                 name,
                 email,
                 phone,

@@ -24,7 +24,7 @@ function App() {
   const [modalEvent, setModalEvent] = useState("");
   const [renderModal, setRenderModal] = useState(false);
   const loadEvents = async () => {
-    const res = await axios.get('http://localhost:3001/api/events');
+    const res = await axios.get('https://citi-eventos.herokuapp.com/api/events');
     setEvents(res.data);
   };
 
