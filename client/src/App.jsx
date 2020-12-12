@@ -4,6 +4,7 @@ import {
   GetToKnowOurBlog,
   WhyWeDoIt,
   Footer,
+  Menu,
   SubscriptionModal,
   ContactSection,
   OurEvents,
@@ -26,7 +27,7 @@ function App() {
 
   useEffect(() => {
     agendaEvents.map((item) => {
-      if(item._id == modal){
+      if (item._id == modal) {
         setModalEvent(item)
         setRenderModal(true)
         return
@@ -59,6 +60,7 @@ function App() {
 
   return (
     <>
+      <Menu />
       <Footer />
       <WhyWeDoIt />
       <Agenda
@@ -67,17 +69,17 @@ function App() {
         oldEvents={ourEvents} />
       <GetToKnowOurBlog />
       {renderModal && (
-        <SubscriptionModal 
-        secureUrl = {modalEvent.images[0].secure_url}
-        name={modalEvent.name}
-        eventDate={modalEvent.eventDate}
-        subscriptionDeadline={modalEvent.subscriptionDeadline}
-        local={modalEvent.local}
-        subscriptionDescription={modalEvent.subscriptionDescription}
-        knowMoreLink={modalEvent.knowMoreLink}
-        setRender={setRenderModal}
-        setModal={setModal}
-      />
+        <SubscriptionModal
+          secureUrl={modalEvent.images[0].secure_url}
+          name={modalEvent.name}
+          eventDate={modalEvent.eventDate}
+          subscriptionDeadline={modalEvent.subscriptionDeadline}
+          local={modalEvent.local}
+          subscriptionDescription={modalEvent.subscriptionDescription}
+          knowMoreLink={modalEvent.knowMoreLink}
+          setRender={setRenderModal}
+          setModal={setModal}
+        />
       )}
       <ContactSection />
     </>

@@ -9,40 +9,40 @@ function OurEventsCard(props) {
     var eventDate = new Date(props.eventDate)
     var month = ""
     switch (eventDate.getMonth()) {
-        case 1:
+        case 0:
             month = "janeiro"
             break;
-        case 2:
+        case 1:
             month = "fevereiro"
             break;
-        case 3:
+        case 2:
             month = "março"
             break
-        case 4:
+        case 3:
             month = "abril"
             break
-        case 5:
+        case 4:
             month = "maio"
             break
-        case 6:
+        case 5:
             month = "junho"
             break;
-        case 7:
+        case 6:
             month = "julho"
             break;
-        case 8:
+        case 7:
             month = "agosto"
             break
-        case 9:
+        case 8:
             month = "setembro"
             break
-        case 10:
+        case 9:
             month = "outubro"
             break
-        case 11:
+        case 10:
             month = "novembro"
             break
-        case 12:
+        case 11:
             month = "dezembro"
             break
     }

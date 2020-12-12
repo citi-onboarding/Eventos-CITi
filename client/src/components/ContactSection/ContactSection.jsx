@@ -30,7 +30,7 @@ function ContactSection(props) {
     };
     
     return (
-        <section id="contact" className="contact-place">
+        <section id="Contact" className="contact-place">
             <div className="contact-content">
                 <img src={bolha} alt="imagem decorativa" id="BubbleContact"/>
                 <form onSubmit={handleSubmit}>

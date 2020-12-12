@@ -9,6 +9,6 @@ import Footer from './Footer/Footer';
 import GetToKnowOurBlog from './GetToKnowOurBlog/GetToKnowOurBlog';
 import PostList from './PostList';
 import SubscriptionModal from './SubscriptionModal/SubscriptionModal'
-
-export {Agenda, BlogCard, ContactSection,BlogWrap, SubscriptionModal, Footer, GetToKnowOurBlog, OurEvents, WhyWeDoIt};
+import Menu from './Menu/Menu.jsx'
+export {Agenda, BlogCard, ContactSection,BlogWrap, SubscriptionModal, Footer, GetToKnowOurBlog, OurEvents, WhyWeDoIt, Menu};
 
